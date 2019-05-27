@@ -9,25 +9,21 @@ on every webpage.
 /*
 Main Page
 */
-div.grid {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  justify-items: stretch;
-  align-items: stretch;
-  width: 100vw;
-  height: 100vh;
+
+#nametag {
+  margin-left: 0vw;
+  margin-right: 0vw;
+  margin-bottom: 3vh;
+  margin-top: 1vh;
+  text-align: center;
+}
+
+#textstyle {
+  font-family: "Georgia", palatino, arial;
   padding: 0;
   margin: 0;
 }
-div.name {
-  grid-row: 1/3;
-  grid-column: 1/2;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  font-family: "Georgia", palatino, arial;
-}
+
 div.text {
   font-size: 200%;
 }
@@ -37,57 +33,50 @@ p.home {
 h1.home {
   color: rgba(0,0,0, 0.8);
 }
-div.myself {
-  grid-row: 1/4;
-  grid-column: 2/3;
-  padding: 0;
-}
-div.contact_info {
-  grid-row: 4/6;
-  grid-column: 2/3;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
 ul.contact {
   list-style-type: none;
   margin: 0;
   padding: 0;
-
+  display: inline-block;
 }
 li.contact {
   display: block;
   float: left;
   color: white;
-  padding: 15px 25px 75px;
+  margin-left: 3vw;
+  margin-right: 3vw;
   text-decoration: none;
   font-size: 150%;
 }
- li.contact a:hover{
-   border-bottom: 3px solid #555;
- }
-div.select {
-  grid-row: 3/5;
-  grid-column: 1/2;
-  padding: 0 px;
-  font-family: "Georgia", palatino, arial;
+
+img.contact-logo {
+  max-width: 20vw;
+  max-height: 20vh;
+  opacity: 0.8;
 }
+
+img.contact-logo:hover {
+  opacity: 1;
+}
+
 ul.main_page {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 59vw;
-  height: 40%;
+  width: 100%;
+  text-align: center;
 }
+
 li.mains a {
   display: block;
   color: white;
-  padding: 3% 30px;
+  padding: 2% 20px;
   text-decoration: none;
   text-align: centre;
-  font-size:150%;
+  font-size:200%;
   border-bottom: 1px solid #555;
   background-color: rgba(255,255,255,0.25);
+  text-shadow: 1px 1px 5px grey;
 }
 li.mains a:hover {
   background-color: rgba(255,255,255,0.4);
@@ -95,7 +84,7 @@ li.mains a:hover {
   font-size: 250%;
   font-weight: bold;
   padding: 3.5% 30px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 
@@ -116,6 +105,17 @@ li.nav {
   float: right;
   border-right: 1px solid;
 }
+
+#nav-text {
+  font-size: 155%;
+  font-family: "Georgia", palatino, arial;
+  text-shadow: 1px 1px 1px #336699;
+}
+
+#nav-item-style {
+  border-right: 1px solid grey;
+}
+
 li.nav a {
   display: block;
   color: black;
@@ -153,15 +153,17 @@ PORTFOLIO styles
   padding-left: 5%;
 }
 
-.desc {
-  width: 50vw;
-  padding-left: 70px;
-  padding-right: 100px;
-  padding-top: 25px;
+.descript {
   text-align: center;
   font-size: 160%;
   color: #94DAF0;
   line-height: 1.5em;
+  font-family: "Georgia", palatino, arial;
+  text-shadow: 1px 1px 4px black;
+}
+
+#vert {
+  vertical-align: middle;
 }
 
 /*
@@ -177,6 +179,9 @@ EXPERIENCE STYLES
   color: white;
   font-size: 125%;
   font-family: "Georgia", palatino, arial;
+  /*Second Version Added*/
+  text-shadow: 1px 1px 3px black;
+  margin-top: 5vh;
 }
 
 .centered {
@@ -218,9 +223,7 @@ EDUCATION STYLES
 .school {
   margin: 3%;
   padding: 0;
-  padding-left: 9%;
-  padding-right: 15%;
-  width: auto;
+  width: 100%;
   height: auto;
   color: #FFCC66;
   font-size: 125%;
@@ -268,7 +271,7 @@ li.connections {
   margin-right: 0;
   margin-left: 5px;
   padding-bottom: 0;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 li.connections:hover {
@@ -278,7 +281,7 @@ li.connections:hover {
 .explain {
   font-size: 160%;
   padding-left: 11%;
-  padding-top: 7%;
+  padding-top: 7vh;
   padding-right: 11%;
   line-height: 2em;
   color: white;
@@ -294,6 +297,7 @@ a.resume {
 
 a.resume:hover {
   text-decoration: underline;
+  color: #94DAF0;
 }
 
 .flex-container {
@@ -305,17 +309,17 @@ a.resume:hover {
 }
 
 .skill-contained {
-  width: 33%;
   color: #94DAF0;
   font-size: 175%;
+  text-shadow: 1px 1px 3px black;
+  font-family: "Georgia", palatino, arial;
+  text-align: left;
 }
 
 ul.about-skill {
   text-align: left;
   display:inline-block;
   margin:0;
-  padding-right: 10%;
-  padding-left: 40%;
   width: 100%;
   font-family: "Georgia", palatino, arial;
 }

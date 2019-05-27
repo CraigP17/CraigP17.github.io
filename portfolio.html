@@ -3,46 +3,75 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Craig Pinto - Portfolio</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" type="text/css" href="mysitestyles.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
 
-  <nav style = "margin:0px;">
-    <ul class="navs">
-      <li class="nametag">Craig Pinto</li>
-      <li class="nav"><a href="about.html">About</a></li>
-      <li class="nav"><a href="education.html">Education</a></li>
-      <li class="nav"><a href="experience.html">Experience</a></li>
-      <li class="nav"><a href="portfolio.html">Portfolio</a></li>
-      <li class="nav"><a href="index.html">Home</a></li>
-    </ul>
+  <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark" style="padding:0 0 0 2vw;">
+
+    <span class="navbar-brand mb-0 h1" id="nav-text">Craig Pinto</span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+    aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
+      <ul class="nav navbar-nav" id="nav-text">
+        <li class="nav-item" id="nav-item-style"><a class="nav-link" href="index.html"> Home </a></li>
+        <li class="nav-item active" id="nav-item-style"><a class="nav-link" href="portfolio.html"> Portfolio </a></li>
+        <li class="nav-item" id="nav-item-style"><a class="nav-link" href="experience.html"> Experience </a></li>
+        <li class="nav-item" id="nav-item-style"><a class="nav-link" href="education.html"> Education </a></li>
+        <li class="nav-item" id="nav-item-style"><a class="nav-link" href="about.html"> About </a></li>
+      </ul>
+    </div>
   </nav>
 
   <body style = "background: url(backgroundcover.jpg);
   background-size: 100vw 100vh; margin: 0;
   background-repeat: no-repeat; background-attachment: fixed;">
 
-    <div style="background-color: rgba(0,0,0,0.4); overflow: hidden;
+    <div style="background-color: rgba(0,0,0,0.3); overflow: hidden;
     display: block; min-height: 100vh;">
 
       <!--Bill Splitter App-->
-      <div class="project">
-        <div class="images">
-          <img src="billsplit.png"
-          alt="Bill Image" style="width: 50%; height: auto; min-height: 40%;">
-        </div>
-        <div class="desc">
-          <h2 style="color: #FFCC66">Bill Splitter App</h2>
-          <p>This application is used to easily split bills, in order to
-            determine how much each person pays. Users can also choose to add
-            fixed or percentage tips. This is the first app I created, so I
-            could learn the basics of Xcode and creating iOS applicatoins. </p>
+      <div class="container">
+
+        <div class="row flex-column-reverse flex-md-row" style="width:100%;
+        align-content:center;margin:0;margin-top:5vh; margin-bottom:5vh;">
+
+          <!--Image-->
+          <div class="col-md-5" style="text-align:center;">
+            <img src="billsplit.png" alt="Bill App" style="width:60%;">
+          </div>
+
+          <!--Description-->
+          <div class="col-md-7" style="margin-top: auto; margin-bottom: auto;">
+            <div class="descript">
+              <h2 style="color: #FFCC66; text-align: center;padding-top:0;">Bill Splitter App</h2>
+              <p>This application is used to easily split bills, in order to
+                determine how much each individual pays. Users can also choose to add
+                fixed or percentage tips. This is the first app I created, so I
+                could learn the basics of Xcode and creating iOS applicatoins. </p>
+            </div>
+          </div>
         </div>
       </div>
 
     </div>
-
 
   </body>
 </html>

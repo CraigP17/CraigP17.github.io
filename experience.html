@@ -3,20 +3,42 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Craig Pinto - Experience</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" type="text/css" href="mysitestyles.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </head>
 
-  <nav style = "margin:0px;">
-    <ul class="navs">
-      <li class="nametag">Craig Pinto</li>
-      <li class="nav"><a href="about.html">About</a></li>
-      <li class="nav"><a href="education.html">Education</a></li>
-      <li class="nav"><a href="experience.html">Experience</a></li>
-      <li class="nav"><a href="portfolio.html">Portfolio</a></li>
-      <li class="nav"><a href="index.html">Home</a></li>
-    </ul>
+  <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark" style="padding:0 0 0 2vw;">
+
+    <span class="navbar-brand mb-0 h1" id="nav-text">Craig Pinto</span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+    aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
+      <ul class="nav navbar-nav" id="nav-text">
+        <li class="nav-item" id="nav-item-style"><a class="nav-link" href="index.html"> Home </a></li>
+        <li class="nav-item" id="nav-item-style"><a class="nav-link" href="portfolio.html"> Portfolio </a></li>
+        <li class="nav-item active" id="nav-item-style"><a class="nav-link" href="experience.html"> Experience </a></li>
+        <li class="nav-item" id="nav-item-style"><a class="nav-link" href="education.html"> Education </a></li>
+        <li class="nav-item" id="nav-item-style"><a class="nav-link" href="about.html"> About </a></li>
+      </ul>
+    </div>
   </nav>
 
   <body style="background: url(backgroundcover.jpg);
@@ -24,47 +46,50 @@
   background-repeat: no-repeat; background-attachment: fixed;">
 
   <!--Add Grey Overlay-->
-  <div style="background-color: rgba(0,0,0,0.4); overflow: auto; display: block;
+  <div style="background-color: rgba(0,0,0,0.3); overflow: auto; display: block;
    min-height: 100%;">
 
-    <div class="content">
+   <div class="content">
 
-      <!--Instructor-Guard Job-->
-      <div class="workplace">
-        <h2 style="color:#FFCC66;">City of Brampton</h2>
-        <h3 style="font-size: 150%;">Lifeguard and Aquatic Instructor
-          <span style="float:right; color: #FFCC66; font-size: 90%;">August 2016
-             to Present &nbsp</span> </h3>
+     <div class="container">
 
-        <!--Swimming Image-->
-        <img src="badges.png"
-        alt="Instructor-Guard Picture" style="width: auto; height: auto;
-        max-width: 10vw; float:right; clear: right; padding-top: 10px;
-        padding-right: 10%; color: black;">
+       <h2 style="color:#FFCC66;">City of Brampton</h2>
+       <h3 >Lifeguard and Aquatic Instructor
+         <span style="float:right; color: #FFCC66; font-size: 90%;">August 2016
+            to Present &nbsp</span> </h3>
 
-        <!--Responsibilities List-->
-        <div class="skillpic">
-          <h4 style="margin:0; color: #94DAF0; font-size: 110%;">Responsibilities:</h4>
+      <div class="row" style="margin-top:3vh; width:100%;">
+
+        <div class="col-sm-8">
+
+          <h3 style="margin:0; color: #94DAF0;">Responsibilities:</h3>
           <ul class="centred">
             <li class="centred">Managing the safety of all participants</li>
             <li class="centred">Working with children and adults to develop
               their swimming skills</li>
           </ul>
-        </div>
 
-        <!--Transferrable Skills List-->
-        <div class="skillpic">
-          <h4 style="margin: 0; color: #94DAF0; font-size: 110%;">Transferrable Skills:</h4>
+          <h3 style="margin: 0; color: #94DAF0;">Transferrable Skills:</h3>
           <ul class="centred">
             <li class="centred"> <strong>Time Management: </strong> creating lesson plans to effectively teach students</li>
             <li class="centred"> <strong>Teamwork: </strong> collaborting with coworkers to efficiently manage the pool</li>
             <li class="centred"> <strong>Critical Thinking: </strong> rescuing and providing first aid to injured individuals</li>
             <li class="centred"> <strong>Interpersonal: </strong> communciating with parents, students and patrons</li>
           </ul>
+
         </div>
+
+        <div class="col-sm-4" style="text-align: center;">
+          <img src="badges.png" alt="" style="max-height: 50vh;">
+        </div>
+
+
+
       </div>
 
-    </div>
+     </div>
+   </div>
+
   </div>
   </body>
 
