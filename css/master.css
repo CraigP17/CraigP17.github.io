@@ -34,7 +34,7 @@ html {
   background-color: grey;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: center;
   background-attachment: fixed;
 }
 
@@ -161,7 +161,7 @@ p.description {
   background-color: grey;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right bottom;
   background-attachment: fixed;
 }
 
