@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Craig Pinto</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Rancho&display=swap" rel="stylesheet">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+
+    <!-- Bootstrap CDN Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146904710-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-146904710-1');
+    </script>
+
+  </head>
+
+  <body style="background-color:#505050" >
+
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark" id="navFont">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+              <a href="#Portfolio"  class="nav-item nav-link">Portfolio</a>
+              <a href="#Education"  class="nav-item nav-link">Education</a>
+              <a href="#About"      class="nav-item nav-link">About</a>
+          </div>
+        </div>
+
+        <a class="navbar-brand" href="http://craigp17.github.io">Craig Pinto</a>
+    </nav>
+
+    <!-- Landing View -->
+    <section id="landing">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <img src="images/displayPic.jpg" class="displayImg" alt="Display Picture of Myself">
+            </div>
+
+            <div class="row justify-content-center">
+                <h1 id="Montserrat">Hi, I'm <span id="RanchoFont">Craig Pinto</span> </h1>
+            </div>
+
+            <div class="row justify-content-center">
+                <ul class="horizontalList">
+                    <li class="link">
+                        <a href="https://github.com/CraigP17" target="_blank">
+                            <i class="fab fa-github" id="iconWhite"></i>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="https://linkedin.com/in/CraigPinto17" target="_blank">
+                            <i class="fab fa-linkedin" id="iconWhite"></i>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="mailto:CraigPinto17@gmail.com">
+                            <i class="far fa-envelope" id="iconWhite"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row justify-content-center">
+                <a class="btn btn-outline-light btn-lg" id="resumeBtn"
+                  href="files/resume.pdf" role="button" target="_blank">
+                    Resume
+                </a>
+            </div>
+
+            <div class="row justify-content-center">
+                <a class="btn btn-outline-light" id="moveDownBtn"
+                  href="#Portfolio" role="button">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="Portfolio">
+        <div class="container">
+            <div class="d-flex justify-content-md-start justify-content-center">
+                <h1 id="PortTitle">Portfolio</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-12" id="mainProject">
+                    <h2 class="project">The Kickoff</h2>
+                    <p class="description">
+                      The Kickoff is a sports platform for students and aspiring
+                       members of the media industry to have their own articles
+                       displayed on the website. I was the sole developer in
+                       creating and designing the website, working
+                       with a member of the industry to implement their vision
+                       of a sports and pop culture platform.
+                    </p>
+                    <a class="btn btn-primary disabled" id="mainBtn"
+                      href="" role="button" target="_blank">
+                        In Progress
+                    </a>
+                    <div id="hidden">
+                      <a class="btn btn btn-outline-primary" id="mainBtn"
+                        href="projects.html#Kickoff" role="button">
+                          Learn More
+                      </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- GameBoii -->
+                <div class="col-md-6" id="secondProjects">
+                    <h2 class="project">GameBoii</h2>
+                    <p class="description">
+                      GameBoii is an Android game created as a final project
+                      in my Software Design course at UofT. I worked
+                      on various aspects of the app such as one of the 3
+                      levels, the bonus spinner, win/loss pages, as well as
+                      file saving and user statistics.
+                    </p>
+                    <a class="btn btn-primary" id="mainBtn"
+                      href="https://github.com/CraigP17/GameBoi-CSC207"
+                      role="button" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <div id="hidden">
+                      <a class="btn btn-outline-primary" id="secondBtn"
+                        href="projects.html#GameBoii" role="button" target="_blank">
+                          Learn More
+                      </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6" id="secondProjects">
+                    <h2 class="project">KeylessTetris</h2>
+                    <p class="description">
+                      KeylessTetris is a program created at HackTheNorth2019
+                      using Python. This program allows a user to play Tetris
+                      without using their keyboard, by using their webcam
+                      to tracks their hand position to move bricks.
+                    </p>
+                    <div id="hidden">
+                      <a class="btn btn-primary" id="mainBtn"
+                        href="" role="button" target="_blank">
+                          <i class="fab fa-github"></i> GitHub
+                      </a>
+                      <a class="btn btn-outline-primary" id="secondBtn"
+                        href="projects.html#GameBoii" role="button" target="_blank">
+                          Learn More
+                      </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" id="hidden">
+                <a class="btn btn-outline-success btn-lg" id="allProjectsBtn"
+                  href="projects.html" role="button" target="_blank">
+                    All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="Education">
+        <div class="container">
+            <ul class="timeline" style="padding-bottom:50px;">
+                <div class="d-flex justify-content-md-start justify-content-center">
+                    <h1 id="EdTitle">Education</h1>
+                </div>
+
+                <!-- UofT -->
+                <li class="event">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2 class="text-md-left text-center" id="school"><b>University of Toronto</b></h2>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 class="text-md-right text-center"
+                              id="date">September 2019 to Present</h4>
+                        </div>
+                    </div>
+                    <h4 id="degree">Bachelors of Science in Computer Science and Statistics</h4>
+                    <hr class="horizLine">
+                    <h5 class="d-flex justify-content-md-start justify-content-center"
+                      id="schoolDesc">Few Courses Taken:</h5>
+                    <p>
+                      Software Design <span class="language">(Java and Git)</span>,
+                      Computer Organization <span class="language">(Verilog)</span>,
+                      Probability with Computer Applications, Intro to Cognitive Science,
+                      Intro to Computer Science <span class="language">(Python)</span>
+                    </p>
+                </li>
+
+                <!-- ULaval -->
+                <li class="event">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2 class="text-md-left text-center"
+                              id="school"><b>University of Laval</b></h2>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 class="text-md-right text-center"
+                              id="date">July to August 2019</h4>
+                        </div>
+                    </div>
+                    <h4 id="degree"><i>le français langue étrangère </i>(FLE) program</h4>
+                    <hr class="horizLine">
+                    <p>
+                      Participated in the Explore program, where I was fully immersed in
+                      French by studying it at the Univerisity of Laval and living in Quebec
+                       where I could discover the culture as well as apply my learning.
+                    </p>
+                </li>
+
+                <!-- Notre Dame -->
+                <li class="event" id="noBtmMargin">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2 class="text-md-left text-center"
+                              id="school"><b>Notre Dame CSS</b></h2>
+                        </div>
+                        <div class="col-md-5">
+                            <h4 class="text-md-right text-center"
+                              id="date">September 2014 to June 2018</h4>
+                        </div>
+                    </div>
+                    <h4 id="degree">International Baccalaureate Diploma</h4>
+                    <p>
+                      Completed the IB Diploma Programme, taking courses in Chemistry,
+                      Biology, Math, History, English, and French.
+                    </p>
+                    <hr class="horizLine">
+                    <h4 id="degree">Ontario Secondary School Diploma</h4>
+                    <p>
+                      OSSD Scholar with 90%+ average
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="About">
+        <div class="container" id="aboutContain">
+            <div class="d-flex justify-content-md-start justify-content-center">
+                <h1 id="PortTitle">About Me</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 id="aboutMe">I'm a Computer
+                      Science student at the University of Toronto. I created this website
+                    to showcase my projects and abilities. I love programming and working
+                    with data, as well as I'm interested in machine learning, statistics,
+                    and cognitive science. <br> I'm always willing to take on projects and
+                    create the perfect program for you.</h4>
+                </div>
+
+                <div class="col-lg-6 mb-2">
+                    <div class="d-flex justify-content-center">
+                        <h2><b>Skills:</b></h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h4 class="mt-3">Python</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar"
+                                style="width: 95%" aria-valuenow="95"
+                                aria-valuemin="0" aria-valuemax="100"
+                                id="languageBar"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4 class="mt-3">Java</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar"
+                                style="width: 90%" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100"
+                                id="languageBar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h4 class="mt-3">HTML/CSS</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar"
+                                style="width: 90%" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4 class="mt-3">C</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar"
+                                style="width: 85%" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100"
+                                id="languageBar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h4 class="mt-3">Bash</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar"
+                                style="width: 85%" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4 class="mt-3">MySQL</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar"
+                                style="width: 80%" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100"
+                                id="databaseBar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h4 class="mt-3">PHP</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar"
+                                style="width: 75%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"
+                                id="languageBar"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4 class="mt-3">Verilog</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar"
+                                style="width: 70%" aria-valuenow="70"
+                                aria-valuemin="0" aria-valuemax="100"
+                                id="hardwareBar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr id="lineDiv">
+
+            <div class="row justify-content-center">
+                <h4 id="resume">Check out my <a class="resume" href="files/resume.pdf"
+                target="_blank">Resume</a></h4>
+            </div>
+
+            <!-- Contact Links -->
+            <div class="row justify-content-center">
+                <ul class="horizontalList">
+                    <li class="link">
+                        <a href="https://github.com/CraigP17" target="_blank">
+                            <i class="fab fa-github" id="iconBlue"></i>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="https://linkedin.com/in/CraigPinto17" target="_blank">
+                            <i class="fab fa-linkedin" id="iconBlue"></i>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="mailto:CraigPinto17@gmail.com">
+                            <i class="far fa-envelope" id="iconBlue"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-outline-light bg-dark" id="topBtn"
+      role="button">
+        <i class="fas fa-chevron-up"></i></a>
+
+  </body>
+</html>

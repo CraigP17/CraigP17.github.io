@@ -1,0 +1,305 @@
+/*
+  These are the styles used for my personal website. CraigP17@github.io
+  They are sorted by styles for each section of the website.
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+#navFont {
+  font-family: "Montserrat", sans-serif;
+}
+
+#topBtn {
+  /*display: none;*/
+  position: fixed;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  bottom: 2vw;
+  right: 2vw;
+  z-index: 400;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 33px;
+}
+
+/* Styles for Landing View */
+
+#landing {
+  height:95vh;
+  background-image: url('../images/forest.jpg');
+  background-color: grey;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+img.displayImg {
+  margin-top: 15vh;
+  border-radius: 50%;
+  border: white 4px solid;
+  width: 17vh;
+  min-width: 100px;
+  height: 17vh;
+  min-height: 100px;
+}
+
+#Montserrat {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin-top: 3vh;
+}
+
+#RanchoFont {
+  font-family: 'Rancho', cursive;
+  font-size: 140%;
+}
+
+ul.horizontalList {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 1vh;
+}
+
+li.link {
+  display: block;
+  float: left;
+  margin: 0 3vw 0 3vw;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+li.link:hover {
+  transition: 0.3s;
+  opacity: 1;
+}
+
+#iconWhite {
+  color: white;
+  text-shadow: 2px 2px 4px #222222;
+  font-size: 200%;
+}
+
+#iconWhite:hover {
+  transition: 0.3s;
+  text-shadow: 3px 3px 5px #111111;
+}
+
+#resumeBtn {
+  margin-top: 1vh;
+  box-shadow: 0 4px 8px 0 #111111;
+  background-color: rgba(25, 25, 25, 0.5);
+}
+
+#resumeBtn:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
+
+#moveDownBtn {
+  margin-top: 13vh;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 #555555;
+  background-color: rgba(25, 25, 25, 0.5);
+}
+
+#moveDownBtn:hover,
+#moveDownBtn:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(0.25em);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+/* Styles for Portfolio View */
+
+#Portfolio {
+  min-height: 100vh;
+  background-color:white;
+}
+
+h1#PortTitle {
+  font-family: 'Rancho', cursive;
+  font-size: 400%;
+  color: #006AD7;
+  text-shadow: 1px 1px 3px #777777;
+  padding: 10vh 0 1vw 0;
+}
+
+h2.project {
+  font-family: 'Rancho', cursive;
+}
+
+p.description {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+#mainProject {
+  padding: 0 1em 3vw 1em;
+}
+
+#secondProjects {
+  padding: 2vw 1em 1em 1em;
+}
+
+#allProjectsBtn {
+  margin: 4vw auto 4vh auto;
+}
+
+/* Styles for Education View */
+
+#Education {
+  min-height:100vh;
+  background-image: url('../images/rockBeach.jpg');
+  background-color: grey;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+h1#EdTitle {
+  font-family: 'Rancho', cursive;
+  font-size: 400%;
+  color: white;
+  text-shadow: 1px 1px 3px #777777;
+  padding: 9vh 10vw 0 0;
+  margin-bottom: 0;
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  margin-left: 2vw;
+  margin-bottom: 0;
+  min-height: 100vh;
+}
+
+#noBtmMargin {
+  margin-bottom: 0;
+}
+
+ul.timeline:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  width: 7px;
+  height: 100%;
+  z-index: 250;
+}
+
+li.event {
+  margin: 1vw 3vw 20px 0;
+  padding: 10px 20px 1px 20px;
+  border-radius: 10px;
+  width: 75vw;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+li.event::before {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #0074D9;
+  background: #F3F0E2;
+  z-index: 275;
+}
+
+#school {
+  color: #006AD7;
+}
+
+#date {
+  color: #006AD7;
+}
+
+#degree {
+  color: #B32442;
+}
+
+.horizLine {
+  margin: 0.5rem 0;
+}
+
+#schoolDesc {
+  color: #58A4B0;
+}
+
+.language {
+  font-weight: bold;
+  color: black;
+}
+
+/* Styles for About View */
+
+#About {
+  min-height: 100vh;
+  background-color:white;
+}
+
+#aboutContain {
+  font-family: "Montserrat", sans-serif;
+}
+
+#aboutMe {
+  text-align: center;
+  line-height: 2em;
+  padding-bottom: 0vw;
+}
+
+#lineDiv {
+  background-color: #888888;
+}
+
+h4#resume {
+  padding-top: 2vw;
+}
+
+.resume {
+  color: #006AD7;
+}
+
+.resume:hover {
+  transition: 0.2s;
+  text-shadow: 3px 3px 5px #999999;
+}
+
+#iconBlue {
+  color: #006AD7;
+  font-size: 200%;
+}
+
+#iconBlue:hover {
+  transition: 0.3s;
+  text-shadow: 3px 3px 5px #999999;
+}
+
+#languageBar {
+  background-color: #006AD7;
+}
+
+#databaseBar {
+  background-color: #CC320C;
+}
+
+#hardwareBar {
+  background-color: #FABC3C;
+}
+
+#hidden {
+  display: none;
+}
