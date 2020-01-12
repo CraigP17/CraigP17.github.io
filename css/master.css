@@ -28,14 +28,28 @@ html {
 
 /* Styles for Landing View */
 
-#landing {
-  height:95vh;
-  background-image: url('../images/forest.jpg');
+.landing {
+  min-height:95vh;
+  background-image: url('../images/forestSmall.jpg');
   background-color: grey;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left bottom;
   background-attachment: fixed;
+}
+
+@media screen and (min-width: 765px) {
+  .landing {
+    background-image: url('../images/forestMed.jpg');
+    background-position: center;
+  }
+}
+
+@media screen and (min-width:900px) {
+  .landing {
+    background-image: url('../images/forest.jpg');
+    background-position: center;
+  }
 }
 
 img.displayImg {
@@ -52,6 +66,7 @@ img.displayImg {
   font-family: 'Montserrat', sans-serif;
   color: white;
   text-shadow: 2px 2px 4px #000000;
+  text-align: center;
   margin-top: 3vh;
 }
 
@@ -155,14 +170,30 @@ p.description {
 
 /* Styles for Education View */
 
-#Education {
+.Education {
   min-height:100vh;
-  background-image: url('../images/rockBeach.jpg');
+  background-image: url('../images/beachSmall.jpg');
   background-color: grey;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: left bottom;
   background-attachment: fixed;
+}
+
+@media screen and (min-width: 765px) {
+  .Education {
+    background-image: url('../images/beachMed.jpg');
+    background-position: left top;
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width:900px) {
+  .Education {
+    background-image: url('../images/rockBeach.jpg');
+    background-position: right bottom;
+    background-attachment: fixed;
+  }
 }
 
 h1#EdTitle {
