@@ -151,6 +151,10 @@ h2.project {
   font-family: 'Rancho', cursive;
 }
 
+#tag {
+  margin-bottom: 10px;
+}
+
 p.description {
   font-family: 'Montserrat', sans-serif;
   color: black;
@@ -161,11 +165,11 @@ p.description {
 }
 
 #secondProjects {
-  padding: 2vw 1em 1em 1em;
+  padding: 0.5em 1em 5vh 1em;
 }
 
 #allProjectsBtn {
-  margin: 4vw auto 4vh auto;
+  margin: 0 auto 4vh auto;
 }
 
 /* Styles for Education View */
