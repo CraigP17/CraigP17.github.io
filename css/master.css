@@ -170,7 +170,7 @@ p.description {
 
 /* Styles for Education View */
 
-.Education {
+#Education {
   min-height:100vh;
   background-image: url('../images/beachSmall.jpg');
   background-color: grey;
@@ -181,7 +181,7 @@ p.description {
 }
 
 @media screen and (min-width: 765px) {
-  .Education {
+  #Education {
     background-image: url('../images/beachMed.jpg');
     background-position: left top;
     background-attachment: fixed;
@@ -189,7 +189,7 @@ p.description {
 }
 
 @media screen and (min-width:900px) {
-  .Education {
+  #Education {
     background-image: url('../images/rockBeach.jpg');
     background-position: right bottom;
     background-attachment: fixed;
