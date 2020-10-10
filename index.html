@@ -19,9 +19,6 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Rancho&display=swap" rel="stylesheet">
 
-    <!-- CSS Styles -->
-    <link rel="stylesheet" type="text/css" href="css/master.css">
-
     <!-- Bootstrap CDN Links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -32,13 +29,19 @@
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+      
+    <!-- CSS Styles -->
+    <link rel="stylesheet" type="text/css" href="css/master.css">  
+    
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- Favicon Logo -->
     <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+    <!-- Webpage Icons -->
+    <!-- <link rel="apple-touch-icon" href="favicon.png"> -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146904710-1"></script>
@@ -125,7 +128,7 @@
     <section id="Portfolio">
         <div class="container">
             <div class="d-flex justify-content-md-start justify-content-center">
-                <h1 id="PortTitle">Portfolio</h1>
+                <h1 class="PortTitle">Portfolio</h1>
             </div>
 
             <div class="row">
@@ -261,74 +264,50 @@
     <section id="Education">
         <div class="container">
             <ul class="timeline" style="padding-bottom:50px;">
-                <div class="d-flex justify-content-md-start justify-content-center">
-                    <h1 id="EdTitle">Education</h1>
-                </div>
-
-                <!-- UofT -->
+                <li class="d-flex justify-content-md-start justify-content-center">
+                    <h1 class="mb-4 mt-2" id="EdTitle">Education</h1>
+                </li>
+                
+                <!-- Ryerson -->
                 <li class="event">
-                    <div class="row">
+                    <div class="row mt-1">
                         <div class="col-md-7">
-                            <h2 class="text-md-left text-center" id="school"><b>University of Toronto</b></h2>
+                            <h2 class="text-md-left text-center"
+                              id="school"><b>Ryerson University</b></h2>
                         </div>
                         <div class="col-md-5">
                             <h4 class="text-md-right text-center"
-                              id="date">September 2019 to Present</h4>
+                              id="date">September 2020 to Present</h4>
                         </div>
                     </div>
-                    <h4 id="degree">Bachelors of Science in Computer Science and Statistics</h4>
+                    <h4 id="degree">Bachelors of Science in Computer Science</h4>
                     <hr class="horizLine">
-                    <h5 class="d-flex justify-content-md-start justify-content-center"
+                    <h5 class="mb-1"> <em>Expected Graduation: <span class="textBlue">2023</span> </em> </h5>
+                    <h5 class="d-flex pt-1 justify-content-md-start justify-content-center"
                       id="schoolDesc">Few Courses Taken:</h5>
-                    <p>
-                      Software Design <span class="language">(Java and Git)</span>,
-                      Computer Organization <span class="language">(Verilog)</span>,
-                      Probability with Computer Applications, Intro to Cognitive Science,
-                      Intro to Computer Science <span class="language">(Python)</span>
-                    </p>
-                </li>
-
-                <!-- ULaval -->
-                <li class="event">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <h2 class="text-md-left text-center"
-                              id="school"><b>University of Laval</b></h2>
+                    <div class="row mb-2">
+                        <div class="col-md-6 mb-0">
+                            <ul class="pl-md-4 pl-3">
+                                <li>Software Design <span class="language">(Java and Git)</span></li>
+                                <li>Web Systems Development <span class="language">(Perl, PHP, Python)</span></li>
+                                <li>Data Structures</li>
+                                <li>Intro to Computer Science <span class="language">(Python)</span></li>
+                            </ul>
                         </div>
-                        <div class="col-md-5">
-                            <h4 class="text-md-right text-center"
-                              id="date">July to August 2019</h4>
-                        </div>
-                    </div>
-                    <h4 id="degree"><i>le français langue étrangère </i>(FLE) program</h4>
-                    <hr class="horizLine">
-                    <p>
-                      Participated in the Explore program, where I was fully immersed in
-                      French by studying it at the Univerisity of Laval and living in Quebec
-                       where I could discover the culture as well as apply my learning.
-                    </p>
-                </li>
-
-                <!-- Notre Dame -->
-                <li class="event" id="noBtmMargin">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <h2 class="text-md-left text-center"
-                              id="school"><b>Notre Dame CSS</b></h2>
-                        </div>
-                        <div class="col-md-5">
-                            <h4 class="text-md-right text-center"
-                              id="date">September 2014 to June 2018</h4>
+                        <div class="col-md-6 mb-0">
+                            <ul class="pl-md-4 pl-3">
+                                <li>Software Tools & Systems <span class="language">(C, UNIX)</span></li>
+                                <li>Probability and Statistics II <span class="language">(R)</span>, </li>
+                                <li>Computer Security</li>
+                                <li>Intro to Cognitive Science</li>
+                                
+                            </ul>
                         </div>
                     </div>
-                    <h4 id="degree">International Baccalaureate Diploma</h4>
-                    <p>
-                      Completed the IB Diploma Programme, taking courses in Chemistry,
-                      Biology, Math, History, English, and French. <br>
-                      Obtained Ontario Secondary School Diploma with 90%+
-                      average every year.
-                    </p>
+                    <h6 class="mb-3"> <em>Transferred from the University of Toronto
+                        after completing 2 years of Computer Science</em> </h6>
                 </li>
+
             </ul>
         </div>
     </section>
@@ -337,7 +316,7 @@
     <section id="About">
         <div class="container" id="aboutContain">
             <div class="d-flex justify-content-md-start justify-content-center">
-                <h1 id="PortTitle">About Me</h1>
+                <h1 class="PortTitle">About Me</h1>
             </div>
 
             <div class="row">
@@ -364,19 +343,17 @@
                         <div class="col-12 col-md-6">
                             <h4 class="mt-3">Python</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar"
+                                <div class="progress-bar languageBar" role="progressbar"
                                 style="width: 95%" aria-valuenow="95"
-                                aria-valuemin="0" aria-valuemax="100"
-                                id="languageBar"></div>
+                                aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
                             <h4 class="mt-3">C</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar"
+                                <div class="progress-bar languageBar" role="progressbar"
                                 style="width: 85%" aria-valuenow="85"
-                                aria-valuemin="0" aria-valuemax="100"
-                                id="languageBar"></div>
+                                aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -385,19 +362,17 @@
                         <div class="col-12 col-md-6">
                             <h4 class="mt-3">MySQL</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar"
+                                <div class="progress-bar databaseBar" role="progressbar"
                                 style="width: 90%" aria-valuenow="90"
-                                aria-valuemin="0" aria-valuemax="100"
-                                id="databaseBar"></div>
+                                aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
                             <h4 class="mt-3">Java</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar"
+                                <div class="progress-bar languageBar" role="progressbar"
                                 style="width: 80%" aria-valuenow="80"
-                                aria-valuemin="0" aria-valuemax="100"
-                                id="languageBar"></div>
+                                aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -406,10 +381,9 @@
                         <div class="col-12 col-md-6">
                             <h4 class="mt-3">PHP</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar"
+                                <div class="progress-bar languageBar" role="progressbar"
                                 style="width: 85%" aria-valuenow="85"
-                                aria-valuemin="0" aria-valuemax="100"
-                                id="languageBar"></div>
+                                aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
@@ -434,10 +408,9 @@
                         <div class="col-12 col-md-6">
                             <h4 class="mt-3">REST API/GraphQL</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar"
+                                <div class="progress-bar hardwareBar" role="progressbar"
                                 style="width: 85%" aria-valuenow="85"
-                                aria-valuemin="0" aria-valuemax="100"
-                                id="hardwareBar"></div>
+                                aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -457,17 +430,17 @@
                 <ul class="horizontalList">
                     <li class="link">
                         <a href="https://github.com/CraigP17" target="_blank">
-                            <i class="fab fa-github" id="iconBlue"></i>
+                            <i class="fab fa-github iconBlue"></i>
                         </a>
                     </li>
                     <li class="link">
                         <a href="https://linkedin.com/in/CPinto17" target="_blank">
-                            <i class="fab fa-linkedin" id="iconBlue"></i>
+                            <i class="fab fa-linkedin iconBlue"></i>
                         </a>
                     </li>
                     <li class="link">
                         <a href="mailto:CraigPinto17@gmail.com">
-                            <i class="far fa-envelope" id="iconBlue"></i>
+                            <i class="far fa-envelope iconBlue"></i>
                         </a>
                     </li>
                 </ul>

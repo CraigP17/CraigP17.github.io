@@ -139,7 +139,7 @@ li.link:hover {
   background-color:white;
 }
 
-h1#PortTitle {
+h1.PortTitle {
   font-family: 'Rancho', cursive;
   font-size: 400%;
   color: #006AD7;
@@ -206,7 +206,6 @@ h1#EdTitle {
   color: white;
   text-shadow: 1px 1px 3px #777777;
   padding: 9vh 10vw 0 0;
-  margin-bottom: 0;
 }
 
 ul.timeline {
@@ -215,10 +214,6 @@ ul.timeline {
   margin-left: 2vw;
   margin-bottom: 0;
   min-height: 100vh;
-}
-
-#noBtmMargin {
-  margin-bottom: 0;
 }
 
 ul.timeline:before {
@@ -252,6 +247,10 @@ li.event::before {
   border: 3px solid #0074D9;
   background: #F3F0E2;
   z-index: 275;
+}
+
+.textBlue {
+  color: #006AD7;
 }
 
 #school {
@@ -313,25 +312,25 @@ h4#resume {
   text-shadow: 3px 3px 5px #999999;
 }
 
-#iconBlue {
+i.iconBlue {
   color: #006AD7;
   font-size: 200%;
 }
 
-#iconBlue:hover {
-  transition: 0.3s;
+i.iconBlue:hover {
+  transition: 0.2s;
   text-shadow: 3px 3px 5px #999999;
 }
 
-#languageBar {
+div.languageBar {
   background-color: #006AD7;
 }
 
-#databaseBar {
+div.databaseBar {
   background-color: #CC320C;
 }
 
-#hardwareBar {
+div.hardwareBar {
   background-color: #FABC3C;
 }
 
