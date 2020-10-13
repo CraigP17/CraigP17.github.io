@@ -17,10 +17,7 @@
     <title>Craig Pinto</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Rancho&display=swap" rel="stylesheet">
-
-    <!-- CSS Styles -->
-    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rancho&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CDN Links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -32,13 +29,19 @@
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+      
+    <!-- CSS Styles -->
+    <link rel="stylesheet" type="text/css" href="css/master.css">  
+    
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- Favicon Logo -->
     <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+    <!-- Webpage Icons -->
+    <!-- <link rel="apple-touch-icon" href="favicon.png"> -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146904710-1"></script>
@@ -89,17 +92,17 @@
                 <ul class="horizontalList">
                     <li class="link">
                         <a href="https://github.com/CraigP17" target="_blank">
-                            <i class="fab fa-github" id="iconWhite"></i>
+                            <i class="fab fa-github iconWhite"></i>
                         </a>
                     </li>
                     <li class="link">
                         <a href="https://linkedin.com/in/CPinto17" target="_blank">
-                            <i class="fab fa-linkedin" id="iconWhite"></i>
+                            <i class="fab fa-linkedin iconWhite"></i>
                         </a>
                     </li>
                     <li class="link">
                         <a href="mailto:CraigPinto17@gmail.com">
-                            <i class="far fa-envelope" id="iconWhite"></i>
+                            <i class="far fa-envelope iconWhite"></i>
                         </a>
                     </li>
                 </ul>
@@ -120,130 +123,187 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Portfolio -->
     <section id="Portfolio">
         <div class="container">
             <div class="d-flex justify-content-md-start justify-content-center">
-                <h1 id="PortTitle">Portfolio</h1>
+                <h1 class="PortTitle pb-0 mb-0">Portfolio</h1>
             </div>
-
-            <div class="row">
-                <!-- The Kickoff -->
-                <div class="col-md-6" id="secondProjects">
-                    <h2 class="project">The Kickoff</h2>
-                    <div>
-                        <button name="button" class="btn btn-sm btn-success" id="tag">Laravel</button>
-                        <button name="button" class="btn btn-sm btn-danger" id="tag">MySQL</button>
-                        <button name="button" class="btn btn-sm btn-primary" id="tag">HTML</button>
-                        <button name="button" class="btn btn-sm btn-info" id="tag">CSS</button>
-                        <button name="button" class="btn btn-sm btn-success" id="tag">PHP</button>
-                        <button name="button" class="btn btn-sm btn-info" id="tag">Bootstrap</button>
-                    </div>
-                    <p class="description">
-                      The Kickoff is a sports platform for students and aspiring
-                       members of the media industry to have their own articles
-                       displayed on the website. I was the sole developer in
-                       creating and designing the website, working
-                       with a member of the industry to implement their vision
-                       of a sports and pop culture platform.
-                    </p>
-                    <a class="btn btn-primary disabled" id="mainBtn"
-                      href="" role="button" target="_blank">
-                        In Progress
-                    </a>
-                    <div id="hidden">
-                      <a class="btn btn btn-outline-primary" id="mainBtn"
-                        href="projects.html#Kickoff" role="button">
-                          Learn More
-                      </a>
-                    </div>
+            <div class="d-flex justify-content-center mb-3">
+                <div class="btn-group description" role="group" aria-label="Basic example">
+                    <button type="button" onclick="openTab('work', this)" class="btn btn-secondary btn-lg tabbed" id="default">Work</button>
+                    <button type="button" onclick="openTab('projects', this)" class="btn btn-secondary btn-lg tabbed">Projects</button>
+                    <button type="button" onclick="openTab('hackathons', this)" class="btn btn-secondary btn-lg tabbed">Hackathons</button>
                 </div>
-
-                <!-- RecipeReady -->
-                <div class="col-md-6" id="secondProjects">
-                    <h2 class="project">RecipeReady</h2>
-                    <div>
-                        <button name="button" class="btn btn-sm btn-success" id="tag">Java</button>
-                        <button name="button" class="btn btn-sm btn-primary" id="tag">Android</button>
-                        <button name="button" class="btn btn-sm btn-danger" id="tag">Git</button>
-                        <button name="button" class="btn btn-sm btn-dark" id="tag">Hackathon</button>
-                    </div>
-                    <p class="description">
-                      RecipeReady is an Android application developed at
-                      UofTHacksVII. It is designed to streamline the
-                      process of finding recipes. Users can filter their searches
-                      by time and type of cuisine, as well as can directly search recipes.
-                      Recipes can also be favourited, and converted into a
-                      shopping list of accumulated ingredients.
-                    </p>
-                    <a class="btn btn-primary" id="mainBtn"
-                      href="https://github.com/CraigP17/UofTHacksVII"
-                      role="button" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <div id="hidden">
-                      <a class="btn btn-outline-primary" id="secondBtn"
-                        href="projects.html#RecipeReady" role="button" target="_blank">
-                          Learn More
-                      </a>
+            </div>
+            
+            <div class="tabContent" id="work">
+                <div class="row pb-4">
+                    <div class="col-12">
+                        <div class="project">
+                            <h3 class="project-name">A51 / DigThisData</h3>
+                            <div>
+                                <button name="button" class="btn btn-sm btn-success mb-2">PHP</button>
+                                <button name="button" class="btn btn-sm btn-danger mb-2">MySQL</button>
+                                <button name="button" class="btn btn-sm btn-primary mb-2">Python</button>
+                                <button name="button" class="btn btn-sm btn-info mb-2">Selenium</button>
+                                <button name="button" class="btn btn-sm btn-info mb-2">Flask</button>
+                                <button name="button" class="btn btn-sm btn-success mb-2">REST API/ GraphQL</button>
+                            </div>
+                            <p class="description d-none d-md-block">
+                                DigThisData is a powerful businesss intelligence and sales 
+                                platform for alcohol vendors that simplifies retail channel and 
+                                licensee / on–premise reporting, sales cycle management, and CRM.
+                            </p>
+                            <p class="description d-none d-md-block">
+                                As a Full-Stack Developer, my primary role was expanding the platform to 
+                                support other provincial sales as well Direct-to-Consumer sales on Shopify.
+                            </p>
+                            <h5 class="text-center text-md-left" id="tasks">Responsibilities:</h5>
+                            <div class="row description">
+                                <div class="col-md-6">
+                                    <ul class="mb-0">
+                                        <li>Developed a <b>Shopify</b> app using <b>Python Flask</b> that connects online client sales with our platform for users to track logistics and inventory. </li>
+                                        <li>Created API endpoints and webhooks to record orders into our database.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Expanded company sales and support for Alberta and Manitoba liquor sales.</li>
+                                        <li>Automated the retrieval of daily inventory and sales data using <b>Python Selenium</b> to ingest CSV files, and created a sales report dashboard.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <!-- GameBoii -->
-                <div class="col-md-6" id="secondProjects">
-                    <h2 class="project">GameBoii</h2>
-                    <div>
-                        <button name="button" class="btn btn-sm btn-success" id="tag">Java</button>
-                        <button name="button" class="btn btn-sm btn-primary" id="tag">Android</button>
-                        <button name="button" class="btn btn-sm btn-danger" id="tag">Git</button>
-                        <button name="button" class="btn btn-sm btn-dark" id="tag">Coursework</button>
+            
+            <div class="tabContent" id="projects">
+                <div class="row">
+                    <!-- The Kickoff -->
+                    <div class="col-md-6 secondProjects">
+                        <div class="project">
+                            <h3 class="project-name">The Kickoff</h3>
+                            <div>
+                                <button name="button" class="btn btn-sm btn-success mb-2">Laravel</button>
+                                <button name="button" class="btn btn-sm btn-danger mb-2">MySQL</button>
+                                <button name="button" class="btn btn-sm btn-primary mb-2">HTML</button>
+                                <button name="button" class="btn btn-sm btn-info mb-2">CSS</button>
+                                <button name="button" class="btn btn-sm btn-success mb-2">PHP</button>
+                                <button name="button" class="btn btn-sm btn-info mb-2">Bootstrap</button>
+                            </div>
+                            <p class="description">
+                              The Kickoff is a sports platform for students and aspiring
+                               members of the media industry to have their own articles
+                               displayed on the website. I was the sole developer in
+                               creating and designing the website, working
+                               with a member of the industry to implement their vision
+                               of a sports and pop culture platform.
+                            </p>
+                            <a class="btn btn-primary disabled"
+                              href="" role="button" target="_blank">
+                                In Progress
+                            </a>
+                        </div>
                     </div>
-                    <p class="description">
-                      GameBoii is an Android game created as a final project
-                      in my Software Design course at UofT. I worked
-                      on various aspects of the app such as one of the 3
-                      levels, the bonus spinner, win/loss pages, as well as
-                      file saving and user statistics.
-                    </p>
-                    <a class="btn btn-primary" id="mainBtn"
-                      href="https://github.com/CraigP17/GameBoi-CSC207"
-                      role="button" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <div id="hidden">
-                      <a class="btn btn-outline-primary" id="secondBtn"
-                        href="projects.html#GameBoii" role="button" target="_blank">
-                          Learn More
-                      </a>
+                    
+                    <!-- GameBoii -->
+                    <div class="col-md-6 secondProjects">
+                        <div class="project">
+                            <h3 class="project-name">GameBoii</h3>
+                            <div>
+                                <button name="button" class="btn btn-sm btn-success mb-2">Java</button>
+                                <button name="button" class="btn btn-sm btn-primary mb-2">Android</button>
+                                <button name="button" class="btn btn-sm btn-danger mb-2">Git</button>
+                                <button name="button" class="btn btn-sm btn-dark mb-2">Coursework</button>
+                            </div>
+                            <p class="description">
+                              GameBoii is an Android game created as a final project
+                              in my Software Design course at UofT. I worked
+                              on various aspects of the app such as one of the 3
+                              levels, the bonus spinner, win/loss pages, as well as
+                              file saving and user statistics.
+                            </p>
+                            <a class="btn btn-primary"
+                              href="https://github.com/CraigP17/GameBoi-CSC207"
+                              role="button" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
-
-                <!-- KeylessTetris -->
-                <div class="col-md-6" id="secondProjects">
-                    <h2 class="project">KeylessTetris</h2>
-                    <div>
-                        <button name="button" class="btn btn-sm btn-success" id="tag">Python</button>
-                        <button name="button" class="btn btn-sm btn-primary" id="tag">cv2</button>
-                        <button name="button" class="btn btn-sm btn-dark" id="tag">Hackathon</button>
+            </div>
+            
+            <div class="tabContent" id="hackathons">
+                <div class="row pb-3">
+                    <!-- RecipeReady -->
+                    <div class="col-md-6 secondProjects">
+                        <div class="project">
+                            <h3 class="project-name">RecipeReady</h3>
+                            <div>
+                                <button name="button" class="btn btn-sm btn-success mb-2">Java</button>
+                                <button name="button" class="btn btn-sm btn-primary mb-2">Android</button>
+                                <button name="button" class="btn btn-sm btn-danger mb-2">Git</button>
+                            </div>
+                            <p class="description">
+                              RecipeReady is an Android application developed at
+                              UofTHacksVII. It is designed to streamline the
+                              process of finding recipes. Users can filter their searches
+                              by time and type of cuisine, as well as can directly search recipes.
+                              Recipes can also be favourited, and converted into a
+                              shopping list of accumulated ingredients.
+                            </p>
+                            <a class="btn btn-primary"
+                              href="https://github.com/CraigP17/UofTHacksVII"
+                              role="button" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
                     </div>
-                    <p class="description">
-                      KeylessTetris is a program created at HackTheNorth2019
-                      using Python. This program allows a user to play Tetris
-                      without using their keyboard, by using their webcam
-                      to tracks their hand position which moves bricks.
-                    </p>
-                    <div id="hidden">
-                      <a class="btn btn-primary" id="mainBtn"
-                        href="" role="button" target="_blank">
-                          <i class="fab fa-github"></i> GitHub
-                      </a>
-                      <a class="btn btn-outline-primary" id="secondBtn"
-                        href="projects.html#GameBoii" role="button" target="_blank">
-                          Learn More
-                      </a>
+                    
+                    <!-- DataFest -->
+                    <div class="col-md-6 secondProjects">
+                        <div class="project">
+                            <h3 class="project-name">ASA DataFest @ UofT</h3>
+                            <div>
+                                <button name="button" class="btn btn-sm btn-info mb-2">R</button>
+                                <button name="button" class="btn btn-sm btn-dark mb-2">Tableau</button>
+                                <button name="button" class="btn btn-sm btn-success mb-2">Excel</button>
+                            </div>
+                            <p class="description">
+                                We analyzed the impact of COVID-19 on Canadian Food Prices, 
+                                using CPI to measure the changes in the average
+                                prices of different goods. <br>
+                                I used Excel for data cleansing to aggregate, filter 
+                                and organize the data into a time series format, 
+                                as well as used Tableau to effectively present our data.
+                            </p>
+                            <a class="btn btn-primary"
+                              href="https://public.tableau.com/profile/eric.zhu8482#!/vizhome/ACanadianExplorationofFoodPricesDuringCOVID-19/Canadianfoodpricesduringcovid"
+                              role="button" target="_blank">
+                                <img src="images/icons8-tableau-software.svg" alt="Tableau logo" style="max-width: 20px"> Tableau
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- KeylessTetris -->
+                    <div class="col-md-6 secondProjects">
+                        <div class="project">
+                            <h3 class="project-name">KeylessTetris</h3>
+                            <div>
+                                <button name="button" class="btn btn-sm btn-success mb-2">Python</button>
+                                <button name="button" class="btn btn-sm btn-primary mb-2">cv2</button>
+                            </div>
+                            <p class="description">
+                              KeylessTetris is a program created at HackTheNorth2019
+                              using Python. This program allows a user to play Tetris
+                              without their keyboard, by using their webcam
+                              to track their hand motions, which corresponds to 
+                              moves within the game.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -261,74 +321,49 @@
     <section id="Education">
         <div class="container">
             <ul class="timeline" style="padding-bottom:50px;">
-                <div class="d-flex justify-content-md-start justify-content-center">
-                    <h1 id="EdTitle">Education</h1>
-                </div>
-
-                <!-- UofT -->
+                <li class="d-flex justify-content-md-start justify-content-center">
+                    <h1 class="mb-4 mt-2" id="EdTitle">Education</h1>
+                </li>
+                
+                <!-- Ryerson -->
                 <li class="event">
-                    <div class="row">
+                    <div class="row mt-1">
                         <div class="col-md-7">
-                            <h2 class="text-md-left text-center" id="school"><b>University of Toronto</b></h2>
+                            <h2 class="text-md-left text-center"
+                              id="school"><b>Ryerson University</b></h2>
                         </div>
                         <div class="col-md-5">
                             <h4 class="text-md-right text-center"
-                              id="date">September 2019 to Present</h4>
+                              id="date">September 2020 to Present</h4>
                         </div>
                     </div>
-                    <h4 id="degree">Bachelors of Science in Computer Science and Statistics</h4>
+                    <h4 id="degree">Bachelors of Science in Computer Science</h4>
                     <hr class="horizLine">
-                    <h5 class="d-flex justify-content-md-start justify-content-center"
+                    <h5 class="mb-1"> <em>Expected Graduation: <span class="textBlue">2023</span> </em> </h5>
+                    <h5 class="d-flex pt-1 justify-content-md-start justify-content-center"
                       id="schoolDesc">Few Courses Taken:</h5>
-                    <p>
-                      Software Design <span class="language">(Java and Git)</span>,
-                      Computer Organization <span class="language">(Verilog)</span>,
-                      Probability with Computer Applications, Intro to Cognitive Science,
-                      Intro to Computer Science <span class="language">(Python)</span>
-                    </p>
-                </li>
-
-                <!-- ULaval -->
-                <li class="event">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <h2 class="text-md-left text-center"
-                              id="school"><b>University of Laval</b></h2>
+                    <div class="row mb-2">
+                        <div class="col-md-6 mb-0">
+                            <ul class="pl-md-4 pl-3">
+                                <li>Software Design <span class="language">(Java and Git)</span></li>
+                                <li>Web Systems Development <span class="language">(Perl, PHP, Python)</span></li>
+                                <li>Data Structures</li>
+                                <li>Intro to Computer Science <span class="language">(Python)</span></li>
+                            </ul>
                         </div>
-                        <div class="col-md-5">
-                            <h4 class="text-md-right text-center"
-                              id="date">July to August 2019</h4>
+                        <div class="col-md-6 mb-0">
+                            <ul class="pl-md-4 pl-3">
+                                <li>Software Tools & Systems <span class="language">(C, UNIX)</span></li>
+                                <li>Probability and Statistics II <span class="language">(R)</span>, </li>
+                                <li>Computer Security</li>
+                                <li>Intro to Cognitive Science</li>
+                            </ul>
                         </div>
                     </div>
-                    <h4 id="degree"><i>le français langue étrangère </i>(FLE) program</h4>
-                    <hr class="horizLine">
-                    <p>
-                      Participated in the Explore program, where I was fully immersed in
-                      French by studying it at the Univerisity of Laval and living in Quebec
-                       where I could discover the culture as well as apply my learning.
-                    </p>
+                    <h6 class="mb-3"> <em>Transferred from the University of Toronto
+                        after completing 2 years of Computer Science</em> </h6>
                 </li>
 
-                <!-- Notre Dame -->
-                <li class="event" id="noBtmMargin">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <h2 class="text-md-left text-center"
-                              id="school"><b>Notre Dame CSS</b></h2>
-                        </div>
-                        <div class="col-md-5">
-                            <h4 class="text-md-right text-center"
-                              id="date">September 2014 to June 2018</h4>
-                        </div>
-                    </div>
-                    <h4 id="degree">International Baccalaureate Diploma</h4>
-                    <p>
-                      Completed the IB Diploma Programme, taking courses in Chemistry,
-                      Biology, Math, History, English, and French. <br>
-                      Obtained Ontario Secondary School Diploma with 90%+
-                      average every year.
-                    </p>
-                </li>
             </ul>
         </div>
     </section>
@@ -337,17 +372,22 @@
     <section id="About">
         <div class="container" id="aboutContain">
             <div class="d-flex justify-content-md-start justify-content-center">
-                <h1 id="PortTitle">About Me</h1>
+                <h1 class="PortTitle">About Me</h1>
             </div>
 
             <div class="row">
                 <div class="col-lg-6">
-                    <h4 id="aboutMe">I'm a Computer
-                      Science student at the University of Toronto. I created this website
-                    to showcase my projects and abilities. I love programming and working
-                    with data, as well as I'm interested in machine learning, statistics,
-                    and cognitive science. <br> I'm always willing to take on projects and
-                    create the perfect program for you.</h4>
+                    <h4 id="aboutMe">
+                        I'm a Computer Science student at Ryerson University.  
+                        I love software development and working with data, 
+                        specifically with server-side and systems development.
+                        <br>
+                        I created this website to showcase my projects and abilities, 
+                        and develop a more accessible resume.
+                        <br> 
+                        I'm also currently seeking Summer 2021 Software Development 
+                        and Engineering internships.
+                    </h4>
                 </div>
 
                 <div class="col-lg-6 mb-2">
@@ -359,59 +399,36 @@
                         <div class="col-12 col-md-6">
                             <h4 class="mt-3">Python</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar"
+                                <div class="progress-bar languageBar" role="progressbar"
                                 style="width: 95%" aria-valuenow="95"
-                                aria-valuemin="0" aria-valuemax="100"
-                                id="languageBar"></div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <h4 class="mt-3">Java</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar"
-                                style="width: 90%" aria-valuenow="90"
-                                aria-valuemin="0" aria-valuemax="100"
-                                id="languageBar"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h4 class="mt-3">HTML/CSS</h4>
-                            <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar"
-                                style="width: 90%" aria-valuenow="90"
                                 aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
                             <h4 class="mt-3">C</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar"
+                                <div class="progress-bar languageBar" role="progressbar"
                                 style="width: 85%" aria-valuenow="85"
-                                aria-valuemin="0" aria-valuemax="100"
-                                id="languageBar"></div>
+                                aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12 col-md-6">
-                            <h4 class="mt-3">Bash</h4>
+                            <h4 class="mt-3">MySQL</h4>
                             <div class="progress">
-                                <div class="progress-bar bg-info" role="progressbar"
-                                style="width: 85%" aria-valuenow="85"
+                                <div class="progress-bar databaseBar" role="progressbar"
+                                style="width: 90%" aria-valuenow="90"
                                 aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
-                            <h4 class="mt-3">MySQL</h4>
+                            <h4 class="mt-3">Java</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar"
+                                <div class="progress-bar languageBar" role="progressbar"
                                 style="width: 80%" aria-valuenow="80"
-                                aria-valuemin="0" aria-valuemax="100"
-                                id="databaseBar"></div>
+                                aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -420,22 +437,40 @@
                         <div class="col-12 col-md-6">
                             <h4 class="mt-3">PHP</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar"
-                                style="width: 75%" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100"
-                                id="languageBar"></div>
+                                <div class="progress-bar languageBar" role="progressbar"
+                                style="width: 85%" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
-                            <h4 class="mt-3">Verilog</h4>
+                            <h4 class="mt-3">HTML/CSS</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar"
-                                style="width: 70%" aria-valuenow="70"
-                                aria-valuemin="0" aria-valuemax="100"
-                                id="hardwareBar"></div>
+                                <div class="progress-bar bg-success" role="progressbar"
+                                style="width: 90%" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h4 class="mt-3">Bash/UNIX</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar"
+                                style="width: 85%" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4 class="mt-3">REST API/GraphQL</h4>
+                            <div class="progress">
+                                <div class="progress-bar hardwareBar" role="progressbar"
+                                style="width: 85%" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -451,17 +486,17 @@
                 <ul class="horizontalList">
                     <li class="link">
                         <a href="https://github.com/CraigP17" target="_blank">
-                            <i class="fab fa-github" id="iconBlue"></i>
+                            <i class="fab fa-github iconBlue"></i>
                         </a>
                     </li>
                     <li class="link">
                         <a href="https://linkedin.com/in/CPinto17" target="_blank">
-                            <i class="fab fa-linkedin" id="iconBlue"></i>
+                            <i class="fab fa-linkedin iconBlue"></i>
                         </a>
                     </li>
                     <li class="link">
                         <a href="mailto:CraigPinto17@gmail.com">
-                            <i class="far fa-envelope" id="iconBlue"></i>
+                            <i class="far fa-envelope iconBlue"></i>
                         </a>
                     </li>
                 </ul>
@@ -472,7 +507,10 @@
     <!-- Back to Top Button -->
     <a href="#" class="btn btn-outline-light bg-dark" id="topBtn"
       role="button">
-        <i class="fas fa-chevron-up"></i></a>
+        <i class="fas fa-chevron-up"></i>
+    </a>
+        
+    <script src="js/main.js"></script>
 
   </body>
 </html>

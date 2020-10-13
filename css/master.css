@@ -95,13 +95,13 @@ li.link:hover {
   opacity: 1;
 }
 
-#iconWhite {
+.iconWhite {
   color: white;
   text-shadow: 2px 2px 4px #222222;
   font-size: 200%;
 }
 
-#iconWhite:hover {
+.iconWhite:hover {
   transition: 0.3s;
   text-shadow: 3px 3px 5px #111111;
 }
@@ -139,7 +139,7 @@ li.link:hover {
   background-color:white;
 }
 
-h1#PortTitle {
+h1.PortTitle {
   font-family: 'Rancho', cursive;
   font-size: 400%;
   color: #006AD7;
@@ -147,25 +147,34 @@ h1#PortTitle {
   padding: 10vh 0 1vw 0;
 }
 
-h2.project {
-  font-family: 'Rancho', cursive;
+h3.project-name {
+  font-family: "Montserrat", sans-serif;
 }
 
-#tag {
-  margin-bottom: 10px;
+.project {
+    border: 2px solid rgba(45,50,56, 0.6);
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0px 5px 5px grey;
 }
 
-p.description {
+.tabbed {
+    background-color: #F1F1F1;
+    color: black;
+    min-width: 90px;
+}
+
+#tasks {
+  color: #006AD7;
+}
+
+.description {
   font-family: 'Montserrat', sans-serif;
   color: black;
 }
 
-#mainProject {
-  padding: 0 1em 3vw 1em;
-}
-
-#secondProjects {
-  padding: 0.5em 1em 5vh 1em;
+.secondProjects {
+  padding: 0.5em 1em 1em 1em;
 }
 
 #allProjectsBtn {
@@ -206,7 +215,6 @@ h1#EdTitle {
   color: white;
   text-shadow: 1px 1px 3px #777777;
   padding: 9vh 10vw 0 0;
-  margin-bottom: 0;
 }
 
 ul.timeline {
@@ -215,10 +223,6 @@ ul.timeline {
   margin-left: 2vw;
   margin-bottom: 0;
   min-height: 100vh;
-}
-
-#noBtmMargin {
-  margin-bottom: 0;
 }
 
 ul.timeline:before {
@@ -252,6 +256,10 @@ li.event::before {
   border: 3px solid #0074D9;
   background: #F3F0E2;
   z-index: 275;
+}
+
+.textBlue {
+  color: #006AD7;
 }
 
 #school {
@@ -313,25 +321,25 @@ h4#resume {
   text-shadow: 3px 3px 5px #999999;
 }
 
-#iconBlue {
+i.iconBlue {
   color: #006AD7;
   font-size: 200%;
 }
 
-#iconBlue:hover {
-  transition: 0.3s;
+i.iconBlue:hover {
+  transition: 0.2s;
   text-shadow: 3px 3px 5px #999999;
 }
 
-#languageBar {
+div.languageBar {
   background-color: #006AD7;
 }
 
-#databaseBar {
+div.databaseBar {
   background-color: #CC320C;
 }
 
-#hardwareBar {
+div.hardwareBar {
   background-color: #FABC3C;
 }
 
