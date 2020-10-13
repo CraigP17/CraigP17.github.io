@@ -95,13 +95,13 @@ li.link:hover {
   opacity: 1;
 }
 
-#iconWhite {
+.iconWhite {
   color: white;
   text-shadow: 2px 2px 4px #222222;
   font-size: 200%;
 }
 
-#iconWhite:hover {
+.iconWhite:hover {
   transition: 0.3s;
   text-shadow: 3px 3px 5px #111111;
 }
@@ -147,25 +147,34 @@ h1.PortTitle {
   padding: 10vh 0 1vw 0;
 }
 
-h2.project {
-  font-family: 'Rancho', cursive;
+h3.project-name {
+  font-family: "Montserrat", sans-serif;
 }
 
-#tag {
-  margin-bottom: 10px;
+.project {
+    border: 2px solid rgba(45,50,56, 0.6);
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0px 5px 5px grey;
 }
 
-p.description {
+.tabbed {
+    background-color: #F1F1F1;
+    color: black;
+    min-width: 90px;
+}
+
+#tasks {
+  color: #006AD7;
+}
+
+.description {
   font-family: 'Montserrat', sans-serif;
   color: black;
 }
 
-#mainProject {
-  padding: 0 1em 3vw 1em;
-}
-
-#secondProjects {
-  padding: 0.5em 1em 5vh 1em;
+.secondProjects {
+  padding: 0.5em 1em 1em 1em;
 }
 
 #allProjectsBtn {
