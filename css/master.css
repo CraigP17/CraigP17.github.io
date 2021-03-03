@@ -181,6 +181,10 @@ h3.project-name {
   margin: 0 auto 4vh auto;
 }
 
+#ryeifyImg {
+    max-width: 1.3em;
+}
+
 /* Styles for Education View */
 
 #Education {
