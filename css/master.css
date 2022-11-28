@@ -308,6 +308,16 @@ li.event::before {
   padding-bottom: 0vw;
 }
 
+#skills {
+  color: #006AD7;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul.skills-no-bullet {
+    list-style: none;
+    text-align: center;
+}
+
 #lineDiv {
   background-color: #888888;
 }
