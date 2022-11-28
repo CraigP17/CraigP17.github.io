@@ -1,4 +1,4 @@
-function openTab(tabName, element) {
+function openTab(tabName) {
     var i, tabcontent;
     tabcontent = document.getElementsByClassName("tabContent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -12,9 +12,15 @@ function openTab(tabName, element) {
     }
       
     document.getElementById(tabName).style.display = "block";
-    element.style.backgroundColor = "#006AD7";
-    element.style.color = "white";
+    
+    document.getElementById(`${tabName}-btn-top`).style.backgroundColor = "#006AD7";
+    document.getElementById(`${tabName}-btn-btm`).style.backgroundColor = "#006AD7";
+    document.getElementById(`${tabName}-btn-top`).style.color = "white";
+    document.getElementById(`${tabName}-btn-btm`).style.color = "white";
+    // element.style.backgroundColor = "#006AD7";
+    // element.style.color = "white";
     
 }
 
-document.getElementById("default").click();
+// Set Work tab as default selected
+document.getElementById("work-btn-top").click();

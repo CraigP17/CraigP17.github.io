@@ -131,39 +131,69 @@
                 <h1 class="PortTitle pb-0 mb-0">Portfolio</h1>
             </div>
             <div class="d-flex justify-content-center mb-3">
-                <div class="btn-group description" role="group" aria-label="Basic example">
-                    <button type="button" onclick="openTab('work', this)" class="btn btn-secondary btn-lg tabbed" id="default">Work</button>
-                    <button type="button" onclick="openTab('projects', this)" class="btn btn-secondary btn-lg tabbed">Projects</button>
-                    <button type="button" onclick="openTab('hackathons', this)" class="btn btn-secondary btn-lg tabbed">Hackathons</button>
+                <div class="btn-group description" role="group" aria-label="Portfolio Tabs">
+                    <button type="button" onclick="openTab('work')" class="btn btn-secondary btn-lg tabbed" id="work-btn-top">Work</button>
+                    <button type="button" onclick="openTab('projects')" class="btn btn-secondary btn-lg tabbed" id="projects-btn-top">Projects</button>
+                    <button type="button" onclick="openTab('hackathons')" class="btn btn-secondary btn-lg tabbed" id="hackathons-btn-top">Hackathons</button>
                 </div>
             </div>
             
             <div class="tabContent" id="work">
-                <div class="row pb-4">
-                    <div class="col-md-5 pb-3">
-                        <div class="project">
-                            <h3 class="project-name text-md-center">Federal Government of Canada</h3>
-                            <div class="text-md-center">
-                                <button name="button" class="btn btn-sm btn-primary mb-2">Python</button>
-                                <button name="button" class="btn btn-sm btn-success mb-2">Azure</button>
-                                <button name="button" class="btn btn-sm btn-danger mb-2">MongoDB</button>
-                                <button name="button" class="btn btn-sm btn-info mb-2">Flask</button>
+                <div class="row pb-4 no-gutters">
+                    <div class="col-lg-7">
+                        
+                        <div class="col-12 p-0 pr-md-3 pb-3">
+                            <div class="project">
+                                <h3 class="project-name text-md-center">MDA</h3>
+                                <div class="text-md-center">
+                                    <button name="button" class="btn btn-sm btn-primary mb-2">C/C++</button>
+                                    <button name="button" class="btn btn-sm btn-primary mb-2">Python</button>
+                                    <button name="button" class="btn btn-sm btn-success mb-2">Jira</button>
+                                    <button name="button" class="btn btn-sm btn-warning mb-2">Test-Driven Development</button>
+                                    <button name="button" class="btn btn-sm btn-warning mb-2">Agile</button>
+                                </div>
+                                <h5 class="my-2">Software Engineering Intern</h5>
+                                <h5 class="text-center text-md-left" id="tasks">Accomplishments:</h5>
+                                <div class="row description">
+                                    <div class="col-12">
+                                        <ul class="mb-0">
+                                            <li>Developed <b>embedded C/C++ modules</b> on Canada Arm 3 following <b>Test-Driven Development (TDD)</b></li>
+                                            <li>Led 4 interns in creating a <b>Python</b> test verification script and parser that aids developer workflow and checks over 800 tests within seconds</li>
+                                            <li>Facilitated scrum stand-ups and retrospectives for 8 team members in a scaled Agile environment</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <h5 class="my-2">Software Developer Intern</h5>
-                            <h5 class="text-center text-md-left" id="tasks">Accomplishments:</h5>
-                            <div class="row description">
-                                <div class="col-12">
-                                    <ul class="mb-0">
-                                        <li>Developed an internal automation portal to streamline the process of creating <b>Azure</b> resources</li>
-                                        <li>Enabled support for real-time streaming of thousands of large datasets for use in Security Information and Event Management (SIEM) platform.</li>
-                                        <li>Created a <b>Python Flask</b> web application with <b>MongoDB</b> that uses the <b>Azure Resource Manager API</b> 
-                                            to efficiently create Azure event hubs and namespaces</li>
-                                    </ul>
+                        </div>
+                        
+                        <div class="col-12 p-0 pr-md-3 pb-3">
+                            <div class="project">
+                                <h3 class="project-name text-md-center">Federal Government of Canada</h3>
+                                <div class="text-md-center">
+                                    <button name="button" class="btn btn-sm btn-primary mb-2">Python</button>
+                                    <button name="button" class="btn btn-sm btn-success mb-2">Azure</button>
+                                    <button name="button" class="btn btn-sm btn-danger mb-2">MongoDB</button>
+                                    <button name="button" class="btn btn-sm btn-info mb-2">Flask</button>
+                                    <button name="button" class="btn btn-sm btn-warning mb-2">Agile</button>
+                                </div>
+                                <h5 class="my-2">Software Developer Intern</h5>
+                                <h5 class="text-center text-md-left" id="tasks">Accomplishments:</h5>
+                                <div class="row description">
+                                    <div class="col-12">
+                                        <ul class="mb-0">
+                                            <li>Developed an internal automation portal to streamline the process of creating <b>Azure</b> resources</li>
+                                            <li>Enabled support for real-time streaming of thousands of large datasets for use in Security Information and Event Management (SIEM) platform.</li>
+                                            <li>Created a <b>Python Flask</b> web application with <b>MongoDB</b> that uses the <b>Azure Resource Manager API</b> 
+                                                to efficiently create Azure event hubs and namespaces in order to decrease costs</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    
+                    
+                    <div class="col-lg-5">
                         <div class="project">
                             <h3 class="project-name text-md-center">A51 / DigThisData</h3>
                             <div class="text-md-center">
@@ -181,20 +211,21 @@
                             </p>
                             <p class="description d-none d-md-block">
                                 As a <b>Full-Stack Developer</b>, my primary role was expanding the platform to 
-                                enable support for other provincial sales as well support Direct-to-Consumer sales on Shopify.
+                                support additional provincial sales as well support Direct-to-Consumer sales on Shopify.
                             </p>
                             <h5 class="text-center text-md-left" id="tasks">Accomplishments:</h5>
                             <div class="row description">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <ul class="mb-0">
+                                        <li>Expanded company sales and support from 3 to 9 provinces.</li>
+                                        <li>Automated the retrieval of daily inventory and sales data using <b>Python Selenium</b> to ingest CSV files, and created a sales report dashboard.</li>
                                         <li>Developed a <b>Shopify</b> app using <b>Python Flask</b> that connects online client sales with our platform for users to track logistics and inventory. </li>
                                         <li>Created API endpoints and webhooks to record orders into our database.</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
                                     <ul>
-                                        <li>Expanded company sales and support for Alberta and Manitoba liquor sales.</li>
-                                        <li>Automated the retrieval of daily inventory and sales data using <b>Python Selenium</b> to ingest CSV files, and created a sales report dashboard.</li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -370,6 +401,14 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="d-flex d-block d-lg-none justify-content-center pb-3">
+                <div class="btn-group description" role="group" aria-label="Portfolio Tabs">
+                    <a href="#Portfolio" role="button" onclick="openTab('work')" class="btn btn-secondary btn-lg tabbed" id="work-btn-btm">Work</a>
+                    <a href="#Portfolio" role="button" onclick="openTab('projects')" class="btn btn-secondary btn-lg tabbed" id="projects-btn-btm">Projects</a>
+                    <a href="#Portfolio" role="button" onclick="openTab('hackathons')" class="btn btn-secondary btn-lg tabbed" id="hackathons-btn-btm">Hackathons</a>
+                </div>
+            </div>
 
             <div class="row justify-content-center" id="hidden">
                 <a class="btn btn-outline-success btn-lg" id="allProjectsBtn"
@@ -441,15 +480,15 @@
             <div class="row mt-4">
                 <div class="col-lg-6">
                     <h4 id="aboutMe">
-                        I'm a Computer Science student at Ryerson University.  
+                        I'm a graduating Computer Science student at Ryerson University.  
                         I love software development and working with data, 
                         specifically with server-side and systems development.
                         <br>
                         I created this website to showcase my projects and abilities, 
                         and develop a more accessible resume.
                         <br> 
-                        <!-- I'm also currently seeking Summer 2021 Software Development 
-                        and Engineering internships. -->
+                        I'm currently seeking 2023 Software Development 
+                        and Engineering roles.
                     </h4>
                 </div>
 
