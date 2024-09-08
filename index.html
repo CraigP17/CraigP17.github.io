@@ -18,18 +18,12 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rancho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Bootstrap CDN Links -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      
     <!-- CSS Styles -->
     <link rel="stylesheet" type="text/css" href="css/master.css">  
     
@@ -55,592 +49,595 @@
 
   </head>
 
-  <body style="background-color:#505050" >
+  <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark" id="navFont">
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-        aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-              <a href="#Portfolio"  class="nav-item nav-link">Portfolio</a>
-              <a href="#Education"  class="nav-item nav-link">Education</a>
-              <a href="#About"      class="nav-item nav-link">About</a>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#Experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+            </ul>
           </div>
+
+          <a class="navbar-brand" href="http://craigp17.github.io">
+            <img src="images/cpBrand.jpg" alt="" width="40" height="40" class="d-inline-block" style="border-radius: 50%;">
+            <div class="d-none d-sm-inline-block">Craig Pinto</div>
+          </a>
         </div>
+      </nav>
 
-        <a class="navbar-brand" href="http://craigp17.github.io">Craig Pinto</a>
-    </nav>
-
-    <!-- Landing View -->
-    <section class="landing">
-        <div class="container">
-
-            <div class="row justify-content-center">
-                <img src="images/displayPic.jpg" class="displayImg" alt="Display Picture of Myself">
+    <!-- Landing -->
+    <section class="d-flex bg-light">
+        <div class="d-none d-md-flex flex-column justify-content-end align-items-end position-relative w-md-60 pt-5 pt-lg-0 designBehindPhoto">
+            <div class="headshot-overlap">
+                <img src="images/headshot.jpg" alt="Craig Pinto" class="img-fluid headshot m-5 px-lg-5">
             </div>
-
-            <div class="row justify-content-center">
-                <h1 id="Montserrat">Hi, I'm <span id="RanchoFont">Craig Pinto</span> </h1>
+        </div> 
+        <div class="d-flex flex-column align-items-center align-items-md-start w-100 ms-0 ms-md-0 py-5 py-md-0 pe-0 pe-md-5" id="forestBackground">
+            <div class="d-none d-md-block">
+                <!-- Not a good solution, but it works -->
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
             </div>
-
-            <div class="row justify-content-center">
-                <ul class="horizontalList">
-                    <li class="link">
-                        <a href="https://github.com/CraigP17" target="_blank">
-                            <i class="fab fa-github iconWhite"></i>
-                        </a>
-                    </li>
-                    <li class="link">
-                        <a href="https://linkedin.com/in/CraigP17" target="_blank">
-                            <i class="fab fa-linkedin iconWhite"></i>
-                        </a>
-                    </li>
-                    <li class="link">
-                        <a href="mailto:CraigPinto17@gmail.com">
-                            <i class="far fa-envelope iconWhite"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="row justify-content-center">
-                <a class="btn btn-outline-light btn-lg" id="resumeBtn"
-                  href="files/Resume.pdf" role="button" target="_blank">
-                    Resume
-                </a>
-            </div>
-
-            <div class="row justify-content-center">
-                <a class="btn btn-outline-light" id="moveDownBtn"
-                  href="#Portfolio" role="button">
-                    <i class="fas fa-chevron-down"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Portfolio -->
-    <section id="Portfolio">
-        <div class="container">
-            <div class="d-flex justify-content-md-start justify-content-center">
-                <h1 class="PortTitle pb-0 mb-0">Portfolio</h1>
-            </div>
-            <div class="d-flex justify-content-center mb-3">
-                <div class="btn-group description" role="group" aria-label="Portfolio Tabs">
-                    <button type="button" onclick="openTab('work')" class="btn btn-secondary btn-lg tabbed" id="work-btn-top">Work</button>
-                    <button type="button" onclick="openTab('projects')" class="btn btn-secondary btn-lg tabbed" id="projects-btn-top">Projects</button>
-                    <button type="button" onclick="openTab('hackathons')" class="btn btn-secondary btn-lg tabbed" id="hackathons-btn-top">Hackathons</button>
-                </div>
-            </div>
-            
-            <div class="tabContent" id="work">
-                <div class="row pb-4 no-gutters">
-                    <div class="col-lg-7">
-                        
-                        <div class="col-12 p-0 pr-md-3 pb-3">
-                            <div class="project">
-                                <h3 class="project-name text-md-center">MDA</h3>
-                                <div class="text-md-center">
-                                    <button name="button" class="btn btn-sm btn-primary mb-2">C/C++</button>
-                                    <button name="button" class="btn btn-sm btn-primary mb-2">Python</button>
-                                    <button name="button" class="btn btn-sm btn-success mb-2">Jira</button>
-                                    <button name="button" class="btn btn-sm btn-warning mb-2">Test-Driven Development</button>
-                                    <button name="button" class="btn btn-sm btn-warning mb-2">Agile</button>
-                                </div>
-                                <h5 class="my-2">Software Engineering Intern</h5>
-                                <h5 class="text-center text-md-left" id="tasks">Accomplishments:</h5>
-                                <div class="row description">
-                                    <div class="col-12">
-                                        <ul class="mb-0">
-                                            <li>Developed <b>embedded C/C++ modules</b> on Canada Arm 3 following <b>Test-Driven Development (TDD)</b></li>
-                                            <li>Led 4 interns in creating a <b>Python</b> test verification script and parser that aids developer workflow and checks over 800 tests within seconds</li>
-                                            <li>Facilitated scrum stand-ups and retrospectives for 8 team members in a scaled Agile environment</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-12 p-0 pr-md-3 pb-3">
-                            <div class="project">
-                                <h3 class="project-name text-md-center">Federal Government of Canada</h3>
-                                <div class="text-md-center">
-                                    <button name="button" class="btn btn-sm btn-primary mb-2">Python</button>
-                                    <button name="button" class="btn btn-sm btn-success mb-2">Azure</button>
-                                    <button name="button" class="btn btn-sm btn-danger mb-2">MongoDB</button>
-                                    <button name="button" class="btn btn-sm btn-info mb-2">Flask</button>
-                                    <button name="button" class="btn btn-sm btn-warning mb-2">Agile</button>
-                                </div>
-                                <h5 class="my-2">Software Developer Intern</h5>
-                                <h5 class="text-center text-md-left" id="tasks">Accomplishments:</h5>
-                                <div class="row description">
-                                    <div class="col-12">
-                                        <ul class="mb-0">
-                                            <li>Developed an internal automation portal to streamline the process of creating <b>Azure</b> resources</li>
-                                            <li>Enabled support for real-time streaming of thousands of large datasets for use in Security Information and Event Management (SIEM) platform.</li>
-                                            <li>Created a <b>Python Flask</b> web application with <b>MongoDB</b> that uses the <b>Azure Resource Manager API</b> 
-                                                to efficiently create Azure event hubs and namespaces in order to decrease costs</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="col-lg-5">
-                        <div class="project">
-                            <h3 class="project-name text-md-center">A51 / DigThisData</h3>
-                            <div class="text-md-center">
-                                <button name="button" class="btn btn-sm btn-success mb-2">PHP</button>
-                                <button name="button" class="btn btn-sm btn-danger mb-2">MySQL</button>
-                                <button name="button" class="btn btn-sm btn-primary mb-2">Python</button>
-                                <button name="button" class="btn btn-sm btn-info mb-2">Selenium</button>
-                                <button name="button" class="btn btn-sm btn-info mb-2">Flask</button>
-                                <button name="button" class="btn btn-sm btn-success mb-2">REST API/ GraphQL</button>
-                            </div>
-                            <p class="description d-none d-md-block">
-                                DigThisData is a powerful businesss intelligence and sales 
-                                platform for alcohol vendors that simplifies retail channel and 
-                                licensee / on–premise reporting, sales cycle management, and CRM.
-                            </p>
-                            <p class="description d-none d-md-block">
-                                As a <b>Full-Stack Developer</b>, my primary role was expanding the platform to 
-                                support additional provincial sales as well support Direct-to-Consumer sales on Shopify.
-                            </p>
-                            <h5 class="text-center text-md-left" id="tasks">Accomplishments:</h5>
-                            <div class="row description">
-                                <div class="col-md-12">
-                                    <ul class="mb-0">
-                                        <li>Expanded company sales and support from 3 to 9 provinces.</li>
-                                        <li>Automated the retrieval of daily inventory and sales data using <b>Python Selenium</b> to ingest CSV files, and created a sales report dashboard.</li>
-                                        <li>Developed a <b>Shopify</b> app using <b>Python Flask</b> that connects online client sales with our platform for users to track logistics and inventory. </li>
-                                        <li>Created API endpoints and webhooks to record orders into our database.</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="tabContent" id="projects">
-                <div class="row pb-3">
-                    
-                    <div class="col-md-6 secondProjects">
-                        <!-- The Kickoff -->
-                        <div class="project mb-4">
-                            <h3 class="project-name">The Kickoff</h3>
-                            <div>
-                                <button name="button" class="btn btn-sm btn-success mb-2">Laravel</button>
-                                <button name="button" class="btn btn-sm btn-danger mb-2">MySQL</button>
-                                <button name="button" class="btn btn-sm btn-primary mb-2">HTML</button>
-                                <button name="button" class="btn btn-sm btn-info mb-2">CSS</button>
-                                <button name="button" class="btn btn-sm btn-success mb-2">PHP</button>
-                                <button name="button" class="btn btn-sm btn-info mb-2">Bootstrap</button>
-                            </div>
-                            <p class="description">
-                              The Kickoff is a sports platform for students and aspiring
-                               members of the media industry to have their own articles
-                               displayed on the website. I was the sole developer in
-                               creating and designing the website, working
-                               with a member of the industry to implement their vision
-                               of a sports and pop culture platform.
-                            </p>
-                            <a class="btn btn-primary disabled"
-                              href="" role="button" target="_blank">
-                                In Progress
-                            </a>
-                        </div>
-                        
-                        <!-- GameBoii -->
-                        <div class="project">
-                            <h3 class="project-name">GameBoii</h3>
-                            <div>
-                                <button name="button" class="btn btn-sm btn-success mb-2">Java</button>
-                                <button name="button" class="btn btn-sm btn-primary mb-2">Android</button>
-                                <button name="button" class="btn btn-sm btn-danger mb-2">Git</button>
-                                <button name="button" class="btn btn-sm btn-dark mb-2">Coursework</button>
-                            </div>
-                            <p class="description">
-                              GameBoii is an Android game created as a final project
-                              in my Software Design course at UofT. I worked
-                              on various aspects of the app such as one of the 3
-                              levels, the bonus spinner, win/loss pages, as well as
-                              file saving and user statistics.
-                            </p>
-                            <a class="btn btn-primary"
-                              href="https://github.com/CraigP17/GameBoi-CSC207"
-                              role="button" target="_blank">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6 secondProjects">
-                        <!-- Ryeify -->
-                        <div class="project">
-                            <h3 class="project-name">Ryeify</h3>
-                            <div>
-                                <button name="button" class="btn btn-sm btn-success mb-2">PHP</button>
-                                <button name="button" class="btn btn-sm btn-danger mb-2">MySQL</button>
-                                <button name="button" class="btn btn-sm btn-info mb-2">jQuery</button>
-                                <button name="button" class="btn btn-sm btn-success mb-2">Spotify API</button>
-                                <button name="button" class="btn btn-sm btn-dark mb-2">Coursework</button>
-                            </div>
-                            <p class="description mb-1">
-                                Ryeify is an online platform to find trending music, view your favourite 
-                                Spotify tracks and artists, as well as search lyrics to songs. My role:
-                            </p>
-                            
-                            <ul class="description">
-                                <li>
-                                    Created an <b>MVC framework</b> in order to streamline collaboration and parallel development.
+            <div class="container mt-5 mt-md-0 mb-4 mb-md-5 ps-0 pe-4" style="z-index: 900 !important; ">
+                <div class="bg-light shadow p-4 p-md-4 card card-width mb-4 ms-0 me-4 ms-md-4 mb-md-0" style="border-top-left-radius: 0%; border-bottom-left-radius: 0%;">
+                    <h1 class="text-dark font-weight-bold name-title">Craig Pinto</h1>
+                    <h2 class="text-primary job-title" id="landingSubtitle">Software Developer</h2>
+                    <div class="d-flex justify-content-lg-end mt-2">
+                        <div class="card-body py-0 ps-0">
+                            <ul class="landingHorizontalList ps-0 mb-0">
+                                <li class="landingLink">
+                                    <a href="https://github.com/CraigP17" target="_blank">
+                                        <i class="fab fa-github iconGrey"></i>
+                                    </a>
                                 </li>
-                                <li>
-                                    Integrated the <b>Spotify API</b> and OAuth 2.0 authentication, as well as 
-                                    developed the user login/registration process and database.
+                                <li class="landingLink">
+                                    <a href="https://linkedin.com/in/CraigP17" target="_blank">
+                                        <i class="fab fa-linkedin iconGrey"></i>
+                                    </a>
                                 </li>
-                                <li>
-                                    Produced personalized pages for Spotify users to access their favourite songs, 
-                                    and find recommended music based on their favourite artists and genres. 
+                                <li class="landingLink">
+                                    <a href="mailto:CraigPinto17@gmail.com">
+                                        <i class="far fa-envelope iconGrey"></i>
+                                    </a>
+                                </li>
+                                <li class="landingLink">
+                                    <a href="files/Resume.pdf" target="_blank">
+                                        <i class="fas fa-file iconGrey"></i>
+                                    </a>
                                 </li>
                             </ul>
-                            <a class="btn btn-primary"
-                               href="https://ryeify.herokuapp.com" role="button" target="_blank">
-                                <img src="images/ryeify.png" alt="Ryeify logo" id="ryeifyImg"> Ryeify Website
-                            </a>
-                            <a class="btn btn-outline-primary"
-                               href="https://github.com/CraigP17/Ryeify-CPS530" role="button" target="_blank">
-                               <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="tabContent" id="hackathons">
-                <div class="row pb-3">
-                    <!-- RecipeReady -->
-                    <div class="col-md-6 secondProjects">
-                        <div class="project">
-                            <h3 class="project-name">RecipeReady</h3>
-                            <div>
-                                <button name="button" class="btn btn-sm btn-success mb-2">Java</button>
-                                <button name="button" class="btn btn-sm btn-primary mb-2">Android</button>
-                                <button name="button" class="btn btn-sm btn-danger mb-2">Git</button>
-                            </div>
-                            <p class="description">
-                              RecipeReady is an Android application developed at
-                              UofTHacksVII. It is designed to streamline the
-                              process of finding recipes. Users can filter their searches
-                              by time and type of cuisine, as well as can directly search recipes.
-                              Recipes can also be favourited, and converted into a
-                              shopping list of accumulated ingredients.
-                            </p>
-                            <a class="btn btn-primary"
-                              href="https://github.com/CraigP17/UofTHacksVII"
-                              role="button" target="_blank">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- DataFest -->
-                    <div class="col-md-6 secondProjects">
-                        <div class="project">
-                            <h3 class="project-name">ASA DataFest @ UofT</h3>
-                            <div>
-                                <button name="button" class="btn btn-sm btn-info mb-2">R</button>
-                                <button name="button" class="btn btn-sm btn-dark mb-2">Tableau</button>
-                                <button name="button" class="btn btn-sm btn-success mb-2">Excel</button>
-                            </div>
-                            <p class="description">
-                                We analyzed the impact of COVID-19 on Canadian Food Prices, 
-                                using CPI to measure the changes in the average
-                                prices of different goods. <br>
-                                I used Excel for data cleansing to aggregate, filter 
-                                and organize the data into a time series format, 
-                                as well as used Tableau to effectively present our data.
-                            </p>
-                            <a class="btn btn-primary"
-                              href="https://public.tableau.com/profile/eric.zhu8482#!/vizhome/ACanadianExplorationofFoodPricesDuringCOVID-19/Canadianfoodpricesduringcovid"
-                              role="button" target="_blank">
-                                <img src="images/icons8-tableau-software.svg" alt="Tableau logo" style="max-width: 20px"> Tableau
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- KeylessTetris -->
-                    <div class="col-md-6 secondProjects">
-                        <div class="project">
-                            <h3 class="project-name">KeylessTetris</h3>
-                            <div>
-                                <button name="button" class="btn btn-sm btn-success mb-2">Python</button>
-                                <button name="button" class="btn btn-sm btn-primary mb-2">cv2</button>
-                            </div>
-                            <p class="description">
-                              KeylessTetris is a program created at HackTheNorth2019
-                              using Python. This program allows a user to play Tetris
-                              without their keyboard, by using their webcam
-                              to track their hand motions, which corresponds to 
-                              moves within the game.
-                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="d-flex d-block d-lg-none justify-content-center pb-3">
-                <div class="btn-group description" role="group" aria-label="Portfolio Tabs">
-                    <a href="#Portfolio" role="button" onclick="openTab('work')" class="btn btn-secondary btn-lg tabbed" id="work-btn-btm">Work</a>
-                    <a href="#Portfolio" role="button" onclick="openTab('projects')" class="btn btn-secondary btn-lg tabbed" id="projects-btn-btm">Projects</a>
-                    <a href="#Portfolio" role="button" onclick="openTab('hackathons')" class="btn btn-secondary btn-lg tabbed" id="hackathons-btn-btm">Hackathons</a>
-                </div>
-            </div>
-
-            <div class="row justify-content-center" id="hidden">
-                <a class="btn btn-outline-success btn-lg" id="allProjectsBtn"
-                  href="projects.html" role="button" target="_blank">
-                    All Projects
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- Education -->
-    <section id="Education">
+    <section class="bg-light" id="Experience">
         <div class="container">
-            <ul class="timeline" style="padding-bottom:50px;">
-                <li class="d-flex justify-content-md-start justify-content-center">
-                    <h1 class="mb-4 mt-2" id="EdTitle">Education</h1>
+            <ul class="timeline pb-4">
+                <li class="d-flex justify-content-md-start justify-content-center pe-4">
+                    <h1 class="my-4 pt-sm-5 ExperienceTitle">My Experience</h1>
                 </li>
-                
-                <!-- Ryerson -->
-                <li class="event">
+
+                <!-- MDA -->
+                <li class="job">
+                    <h2 class="company text-md-start text-center pt-2">
+                        <b>MDA Space</b>
+                    </h2>
                     <div class="row mt-1">
                         <div class="col-md-7">
-                            <h2 class="text-md-left text-center"
-                              id="school"><b>Ryerson University</b></h2>
+                            <h4 class="jobTitle mb-0 text-center text-md-start">
+                                <span class="d-block d-sm-none">Junior MTS</span>
+                                <span class="d-none d-sm-block">Jr. Member of Technical Staff</span>
+                            </h4>
                         </div>
-                        <div class="col-md-5">
-                            <h4 class="text-md-right text-center"
-                              id="date">September 2020 to Present</h4>
+                        <div class="col-md-5 d-none d-md-block">
+                            <h4 class="jobDate mb-0 text-end">May 2023 to Present</h4>
                         </div>
                     </div>
-                    <h4 id="degree">Bachelors of Science in Computer Science</h4>
                     <hr class="horizLine">
-                    <h5 class="mb-1"> <em>Expected Graduation: <span class="textBlue">2023</span> </em> </h5>
-                    <h5 class="d-flex pt-1 justify-content-md-start justify-content-center"
-                      id="schoolDesc">Few Courses Taken:</h5>
-                    <div class="row mb-2">
-                        <div class="col-md-6 mb-1">
-                            <ul class="pl-md-4 pl-3">
-                                <li>Machine Learning <span class="language">(Python)</span></li>
-                                <li>Databases <span class="language">(SQL)</span></li>
-                                <li>Software Design <span class="language">(Java and Git)</span></li>
-                                <li>Web Systems Development <span class="language">(Perl, PHP, Python)</span></li>
-                                <li>Computer Security</li>
-                                <li>Functional Programming <span class="language">(Elixir, Haskell, Rust)</span></li>
-                            </ul>
+                    <ul class="ps-md-4 ps-2 mb-2">
+                        <li>
+                            Developed <b>embedded C++ modules</b> for Canadarm 3 following
+                            <b>
+                                <span class="d-none d-md-inline-block">Test-Driven Development (TDD)</span>
+                                <span class="d-inline-block d-md-none">TDD</span>
+                            </b> in a scaled <b>Agile</b> environment.
+                        </li>
+                        <li>
+                            <span class="d-none d-md-block">
+                                Led the architecture and development of a RTSP camera application to seamlessly integrate 
+                                and support 4+ cameras, while being <b>VxWorks real-time operating system (RTOS)</b> compatible.
+                            </span>
+                            <span class="d-block d-md-none">
+                                Led the architecture and development of a RTSP camera app to seamlessly integrate 
+                                and support 4+ cameras on <b>VxWorks RTOS</b>.
+                            </span>
+                        </li>
+                        <div class="d-none d-md-block">
+                            <li>
+                                Managed a tiger team of 6 members as acting scrum master to set up <b>Hardware-in-the-Loop (HIL)</b> testing
+                            </li>
                         </div>
-                        <div class="col-md-6 mb-0">
-                            <ul class="pl-md-4 pl-3">
-                                <li>Computer Vision <span class="language">(MATLAB)</span></li>
-                                <li>Data Structures & Algorithms</li>
-                                <li>Software Tools & Systems <span class="language">(C, UNIX)</span></li>
-                                <li>Probability and Statistics II <span class="language">(R)</span></li>
-                                <li>Computer Science <span class="language">(Python)</span></li>
-                                <li>Intro to Cognitive Science</li>
-                            </ul>
+                    </ul>
+                    <div class="row mt-1">
+                        <div class="col-md-7">
+                            <h4 class="jobTitle mb-0 text-center text-md-start">
+                                <span class="d-block d-sm-none">Software Dev Intern</span>
+                                <span class="d-none d-sm-block">Embedded Software Developer Intern</span>
+                            </h4>
+                        </div>
+                        <div class="col-md-5 d-none d-md-block">
+                            <h4 class="jobDate mb-0 text-end">May 2022 to April 2023</h4>
                         </div>
                     </div>
-                    <h6 class="mb-3"> <em>Transferred from the University of Toronto
-                        after completing 2 years of Computer Science</em> </h6>
+                    <hr class="horizLine">
+                    <ul class="ps-md-4 ps-2 mb-2">
+                        <li>
+                            Created a test verification script in <b>Python</b> that aid developer workflow and checks over 1000 tests within seconds
+                        </li>
+                        <div class="d-none d-md-block">
+                            <li>
+                                Improved build system and <b>Jenkins pipeline</b> with custom flags, achieving a 30% reduction 
+                                in build and automated test time
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                
+                <!-- Government of Canada -->
+                <li class="job">
+                    <h2 class="company text-md-start text-center pt-2">
+                        <b>Government of Canada</b>
+                    </h2>
+                    <div class="row mt-1">
+                        <div class="col-md-7">
+                            <h4 class="jobTitle mb-0 text-center text-md-start">
+                                <span class="d-block d-sm-none">Full-Stack Intern</span>
+                                <span class="d-none d-sm-block">Full Stack Developer Intern</span>
+                            </h4>
+                        </div>
+                        <div class="col-md-5 d-none d-md-block">
+                            <h4 class="jobDate mb-0 text-end">May to August 2021</h4>
+                        </div>
+                    </div>
+                    <hr class="horizLine">
+                    <ul class="ps-md-4 ps-2 mb-2">
+                        <div class="d-block d-md-none">
+                            <li>
+                                Created an internal automation portal using <b>Python Flask</b> and <b>MongoDB</b> 
+                                to streamline <b>Azure EventHub</b> creation for real-time data streaming, 
+                                optimizing efficiency and reducing costs.
+                            </li>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <li>
+                                Created a <b>Python Flask</b> web application integrated with <b>MongoDB</b> to streamline the process 
+                                of creating <b>Azure</b> resources in order to support the real-time streaming of thousands of large datasets.
+                            </li>
+                            <li>
+                                Utilized the <b>Azure Resource Manager API</b> to effectively deploy <b>Azure Event Hubs</b> and namespaces,
+                                optimizing resource allocation and reducing costs.
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+
+                <!-- DTD -->
+                <li class="job">
+                    <h2 class="company text-md-start text-center pt-2">
+                        <b>DigThisData / A51</b>
+                    </h2>
+                    <div class="row mt-1">
+                        <div class="col-md-7">
+                            <h4 class="jobTitle mb-0 text-center text-md-start">
+                                <span class="d-block d-sm-none">Full-Stack Intern</span>
+                                <span class="d-none d-sm-block">Full Stack Developer Intern</span>
+                            </h4>
+                        </div>
+                        <div class="col-md-5 d-none d-md-block">
+                            <h4 class="jobDate mb-0 text-end">May 2020 to April 2021</h4>
+                        </div>
+                    </div>
+                    <hr class="horizLine">
+                    <ul class="ps-md-4 ps-2 mb-2">
+                        <li>
+                            Expanded company sales and support <b>from 3 to 9 provinces</b> by 
+                            automating the retrieval of daily inventory and sales data using <b>Python Selenium</b>, 
+                            and generating a sales report dashboard in <b>PHP</b>.
+                        </li>
+                        <div class="d-none d-md-block">
+                            <li>
+                                Developed a <b>Shopify</b> app using <b>Python Flask</b> to help their customers 
+                                setup their stores as well as connect their online client sales with the DTD platform 
+                                to track sales and inventory.
+                            </li>
+                        </div>
+                    </ul>
                 </li>
 
             </ul>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Projects" class="designBehindPhoto">
+
+        <div class="container">
+            <div class="row pb-4">
+
+                <div class="col-12">
+                    <div class="d-flex justify-content-start">
+                        <h1 class="section-title ps-0 ps-sm-5 mt-5 pb-3 pt-sm-4">My Projects</h1>
+                    </div>
+                </div>
+                
+                <!-- Ryeify -->
+                <div class="col-md-1 col-12"></div>
+                <div class="col-md-10 col-12">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-6 rounded-border-left-lg-top-sm">
+                                <div id="ryeify-carousel" class="carousel slide h-100" data-bs-ride="carousel">
+
+                                    <!-- Indicators/dots -->
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#ryeify-carousel" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#ryeify-carousel" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#ryeify-carousel" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#ryeify-carousel" data-bs-slide-to="3"></button>
+                                        <button type="button" data-bs-target="#ryeify-carousel" data-bs-slide-to="4"></button>
+                                        <button type="button" data-bs-target="#ryeify-carousel" data-bs-slide-to="5"></button>
+                                    </div>
+
+                                    <!-- The slideshow/carousel -->
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active">
+                                            <img src="images/project/ryeify/home.png" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/ryeify/recommended.png" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/ryeify/study.png" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/ryeify/favourite.png" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/ryeify/midi.png" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/ryeify/lyric.png" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls/icons -->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#ryeify-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#ryeify-carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 rounded-border-right-lg-bottom-sm">
+                                <div class="card-body pt-md-4 pt-2 ps-md-0">
+                                    <h2 class="card-title project-title text-start d-flex align-items-center">
+                                        <img src="images/project/ryeify/ryeify-logo.png" class="project-logo" alt="">
+                                        Ryeify
+                                    </h2>
+                                    <p class="card-text">
+                                        Ryeify is a web platform that analyzes your Spotify listening history to offer 
+                                        personalized music recommendations and feature currently trending songs, with music previews.
+                                        <span class="d-none d-md-block">
+                                            <br>
+                                        </span>
+                                        It was created for a Web Development course project using PHP, MySQL, and the Spotify API.
+                                    </p>
+                                    <hr>
+                                    <a href="https://github.com/CraigP17/Ryeify-CPS530" role="button" target="_blank">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-12"></div>
+                <!-- Ryeify End -->
+
+                <div class="col-12">
+                    <br>
+                    <br>
+                </div>
+
+                <!-- TMAV -->
+                <div class="col-md-1 col-12"></div>
+                <div class="col-md-10 col-12">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-6 rounded-border-left-lg-top-sm">
+                                <div id="tmav-carousel" class="carousel slide h-100" data-bs-ride="carousel">
+
+                                    <!-- Indicators/dots -->
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#tmav-carousel" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#tmav-carousel" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#tmav-carousel" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#tmav-carousel" data-bs-slide-to="3"></button>
+                                        <button type="button" data-bs-target="#tmav-carousel" data-bs-slide-to="4"></button>
+                                        <button type="button" data-bs-target="#tmav-carousel" data-bs-slide-to="5"></button>
+                                        <button type="button" data-bs-target="#tmav-carousel" data-bs-slide-to="6"></button>
+                                        <button type="button" data-bs-target="#tmav-carousel" data-bs-slide-to="7"></button>
+                                    </div>
+
+                                    <!-- The slideshow/carousel -->
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active">
+                                            <img src="images/project/tmav/ryerson.jpg" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/tmav/presentation.jpg" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/tmav/website.png" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/tmav/frontend.png" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/tmav/drone.jpg" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/tmav/compdebug.jpg" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/tmav/compme.jpg" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/tmav/compside.jpg" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls/icons -->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#tmav-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#tmav-carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 rounded-border-right-lg-bottom-sm">
+                                <div class="card-body pt-md-4 pt-2 ps-md-0">
+                                    <h2 class="card-title project-title text-start d-flex align-items-center">
+                                        <img src="images/project/tmav/tmav-logo.png" class="project-logo" alt="">
+                                         TMAV
+                                    </h2>
+                                    <p class="card-text">
+                                            Toronto Metropolitan Aerial Vehicles is a university team that participates in annual drone competitions.
+                                            <span class="d-none d-md-block">
+                                                <br>
+                                            </span>
+                                            As the software lead, I developed an autonomous control system for passenger transport and an aerial intruder 
+                                            detection system. Additionally, I designed the team's website to showcase its achievements.
+                                    </p>
+                                    <hr>
+                                    <a href="http://tmav.ca" target="_blank">
+                                        <i class="fa fa-plane"></i> TMAV.ca
+                                    </a>
+                                    &nbsp; &nbsp;
+                                    <a 
+                                        href="https://github.com/CraigP17/Control-Systems-2023"
+                                        role="button" target="_blank">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-12"></div>
+                <!-- TMAV End -->
+
+                <div class="col-12">
+                    <br>
+                    <br>
+                </div>
+
+                <!-- Kickoff -->
+                <div class="col-md-1 col-12"></div>
+                <div class="col-md-10 col-12">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-6 rounded-border-left-lg-top-sm">
+                                <div id="kickoff-carousel" class="carousel slide h-100" data-bs-ride="carousel">
+
+                                    <!-- Indicators/dots -->
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#kickoff-carousel" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#kickoff-carousel" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#kickoff-carousel" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#kickoff-carousel" data-bs-slide-to="3"></button>
+                                        <button type="button" data-bs-target="#kickoff-carousel" data-bs-slide-to="4"></button>
+                                    </div>
+
+                                    <!-- The slideshow/carousel -->
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active">
+                                            <img src="images/project/kickoff/Sports1.png" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/kickoff/Podcasts.png" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/kickoff/PodcastExample.png" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/kickoff/AdminPage.png" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="images/project/kickoff/PopCulture.png" class="d-block h-100 w-100 carousel-photo-fit rounded-border-left-lg-top-sm" alt="...">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls/icons -->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#kickoff-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#kickoff-carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 rounded-border-right-lg-bottom-sm">
+                                <div class="card-body pt-md-4 pt-2 ps-md-0">
+                                    <h2 class="card-title project-title text-start d-flex align-items-center">
+                                        <img src="images/project/kickoff/kickoff-logo.png" class="project-logo" alt="">
+                                        The Kickoff
+                                    </h2>
+                                    <p class="card-text">
+                                        The Kickoff is a sports platform tailored for sports media students to showcase their content. 
+                                        Students can create accounts, upload articles and podcasts, and have their submissions reviewed by dedicated editors before publication. 
+                                        <span class="d-none d-md-block">
+                                            <br>
+                                        </span>
+                                        This was my first project, developed using PHP with the Laravel framework, MySQL, and AWS S3 for media storage.
+                                    </p>
+                                    <hr>
+                                    <a href="https://github.com/CraigP17/KickoffCA" role="button" target="_blank">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-12"></div>
+                <!-- Kickoff End -->
+                
+            </div>
         </div>
     </section>
 
     <!-- About Me -->
     <section id="About">
-        <div class="container" id="aboutContain">
-            <div class="d-flex justify-content-md-start justify-content-center">
-                <h1 class="PortTitle">About Me</h1>
-            </div>
+        <div class="container">
+            <div class="row pt-5">
 
-            <div class="row ">
-                <div class="col-lg-6">
-                    <h4 class="" id="aboutMe">
-                        I'm a graduating Computer Science student at Ryerson University.  
-                        I love software development and working with data, 
-                        specifically with server-side and systems development.
+                <div class="col-12 d-block d-lg-none">
+                    <h1 class="section-title">About Me</h1>
+                </div>
+
+                <div class="col-12 col-lg-1"></div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="col-12 text-center mt-md-5">
+                        <img src="images/headshot.jpg" class="mt-sm-5" id="circle-photo" alt="">
+                    </div>
+                    <div class="col-12">
+                        <h1 class="text-dark text-center pt-3">Craig Pinto</h1>
+                    </div>
+                    <div class="col-12">
+                        <h3 class="text-danger text-center pb-0">Software Developer</h3>
+                    </div>
+                    <div class="col-12 text-center">
+
+                        <div class="d-none d-sm-block mx-3 my-4">
+                            <hr id="redLineDiv">
+                        </div>
+                        
+                        <a class="btn btn-outline-danger btn-md mb-2"
+                            href="files/Resume.pdf" role="button" target="_blank">
+                            Resume
+                        </a>
+
                         <br>
-                        I created this website to showcase my projects and abilities, 
-                        and develop a more accessible resume.
-                        <br> 
-                        I'm currently seeking 2023 Software Development 
-                        and Engineering roles.
-                    </h4>
+
+                        <div class="row py-3">
+                            <div class="col-4 text-end">
+                                <a href="https://github.com/CraigP17" target="_blank">
+                                    <i class="fab fa-github iconRed"></i>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://linkedin.com/in/CraigP17" target="_blank">
+                                    <i class="fab fa-linkedin iconRed"></i>
+                                </a>
+                            </div>
+                            <div class="col-4 text-start">
+                                <a href="mailto:CraigPinto17@gmail.com">
+                                    <i class="far fa-envelope iconRed"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-lg-6 mt-4 mb-2">
-                    <div class="d-flex justify-content-center">
-                        <h2 id="skills"><b>Skills:</b></h2>
-                    </div>
-                    
-                    <div class="row description">
-                        <div class="col-md-12 mt-3">
-                            <ul class="mb-0">
+                <div class="col-12 col-lg-6">
+                    <div class="col-12">
+                        <div class="d-none d-lg-block justify-content-start">
+                            <h1 class="section-title mt-5 pb-3">About Me</h1>
+                        </div>
+                        <div class="px-3">
 
-                            </ul>
-                        </div>
-                        <div class="col-4">
-                            <ul class="skills-no-bullet">
-                                <li><button name="button" class="btn btn-primary mb-2"><h5 class="mb-0">Python</h3></button></li>
-                                <li><button name="button" class="btn btn-danger mb-2"><h5 class="mb-0">MySQL</h3></button></li>
-                                <li><button name="button" class="btn btn-primary mb-2"><h5 class="mb-0">PHP</h3></button></li>
-                                <li><button name="button" class="btn btn-success mb-2"><h5 class="mb-0">Azure</h3></button></li>
-                                <li><button name="button" class="btn btn-warning mb-2"><h5 class="mb-0">Agile</h3></button></li>
-                            </ul>
-                        </div>
-                        <div class="col-4">
-                            <ul class="skills-no-bullet">
-                                <li><button name="button" class="btn btn-primary mb-2"><h5 class="mb-0">C/C++</h3></button></li>
-                                <li><button name="button" class="btn btn-info mb-2"><h5 class="mb-0">Flask</h3></button></li>
-                                <li><button name="button" class="btn btn-danger mb-2"><h5 class="mb-0">MongoDB</h3></button></li>
-                                <li><button name="button" class="btn btn-success mb-2"><h5 class="mb-0">GraphQL</h3></button></li>
-                                <li><button name="button" class="btn btn-primary mb-2"><h5 class="mb-0">Bash/UNIX</h3></button></li>
-                            </ul>
-                        </div>
-                        <div class="col-4">
-                            <ul class="skills-no-bullet">
-                                <li><button name="button" class="btn btn-primary mb-2"><h5 class="mb-0">Javascript</h3></button></li>
-                                <li><button name="button" class="btn btn-success mb-2"><h5 class="mb-0">REST API</h3></button></li>
-                                <li><button name="button" class="btn btn-info mb-2"><h5 class="mb-0">Selenium</h3></button></li>
-                                <li><button name="button" class="btn btn-info mb-2"><h5 class="mb-0">Django</h3></button></li>
-                                <li><button name="button" class="btn btn-warning mb-2"><h5 class="mb-0">TDD</h3></button></li>
-                            </ul>
+                            <h5 class="aboutMe mb-2">
+                                Hi, I'm Craig Pinto! 
+                            </h5>
+                            <h5 class="aboutMe mb-2">
+                                I have three years of experience in full-stack web development, ETL pipelines, and real-time applications, 
+                                along with a Computer Science degree from Ryerson University. 
+                                Currently, I'm writing embedded software for the Canadarm 3 at MDA Space.
+                            </h5>
+                            <h5 class="aboutMe mb-2">
+                                I'm passionate about server-side and systems development, 
+                                with proven expertise in Python, C++, JavaScript, SQL, Flask, Django, Docker, and VxWorks.
+                            </h5>
+                            <h5 class="aboutMe">
+                               Check out my work and feel free to connect if you'd like to collaborate or discuss a project!
+                            </h5>
+
+                            <br>
+                            <h4 class="project-title"><i class="fa fa-graduation-cap"></i> Education</h4>
+                            <h5>BSc. in Computer Science, 2018-2023</h5>
+                            <h6>Ryerson University</h6>
                         </div>
                     </div>
-
-                    <!-- <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h4 class="mt-3">Python</h4>
-                            <div class="progress">
-                                <div class="progress-bar languageBar" role="progressbar"
-                                style="width: 95%" aria-valuenow="95"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <h4 class="mt-3">C</h4>
-                            <div class="progress">
-                                <div class="progress-bar languageBar" role="progressbar"
-                                style="width: 85%" aria-valuenow="85"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h4 class="mt-3">MySQL</h4>
-                            <div class="progress">
-                                <div class="progress-bar databaseBar" role="progressbar"
-                                style="width: 90%" aria-valuenow="90"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <h4 class="mt-3">Java</h4>
-                            <div class="progress">
-                                <div class="progress-bar languageBar" role="progressbar"
-                                style="width: 80%" aria-valuenow="80"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h4 class="mt-3">PHP</h4>
-                            <div class="progress">
-                                <div class="progress-bar languageBar" role="progressbar"
-                                style="width: 85%" aria-valuenow="85"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <h4 class="mt-3">HTML/CSS</h4>
-                            <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar"
-                                style="width: 90%" aria-valuenow="90"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h4 class="mt-3">Bash/UNIX</h4>
-                            <div class="progress">
-                                <div class="progress-bar bg-info" role="progressbar"
-                                style="width: 85%" aria-valuenow="85"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <h4 class="mt-3">REST API/GraphQL</h4>
-                            <div class="progress">
-                                <div class="progress-bar hardwareBar" role="progressbar"
-                                style="width: 85%" aria-valuenow="85"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div> -->
-
                 </div>
-            </div>
 
-            <hr id="lineDiv">
-
-            <div class="row justify-content-center">
-                <h4 id="resume">Check out my <a class="resume" href="files/Resume.pdf"
-                target="_blank">Resume</a></h4>
-            </div>
-
-            <!-- Contact Links -->
-            <div class="row justify-content-center">
-                <ul class="horizontalList">
-                    <li class="link">
-                        <a href="https://github.com/CraigP17" target="_blank">
-                            <i class="fab fa-github iconBlue"></i>
-                        </a>
-                    </li>
-                    <li class="link">
-                        <a href="https://linkedin.com/in/CraigP17" target="_blank">
-                            <i class="fab fa-linkedin iconBlue"></i>
-                        </a>
-                    </li>
-                    <li class="link">
-                        <a href="mailto:CraigPinto17@gmail.com">
-                            <i class="far fa-envelope iconBlue"></i>
-                        </a>
-                    </li>
-                </ul>
+                <div class="col-12 col-lg-1"><br><br></div>
             </div>
         </div>
     </section>
@@ -650,8 +647,9 @@
       role="button">
         <i class="fas fa-chevron-up"></i>
     </a>
-        
+    
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
 </html>

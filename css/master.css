@@ -1,18 +1,17 @@
 /*
   These are the styles used for my personal website. CraigP17@github.io
-  They are sorted by styles for each section of the website.
 */
 
 html {
   scroll-behavior: smooth;
 }
 
-#navFont {
+body {
   font-family: "Montserrat", sans-serif;
+  background-color: black;
 }
 
 #topBtn {
-  /*display: none;*/
   position: fixed;
   border-radius: 50%;
   width: 50px;
@@ -26,201 +25,168 @@ html {
   line-height: 33px;
 }
 
-/* Styles for Landing View */
 
-.landing {
-  min-height:95vh;
+/* Landing Styles */
+
+#forestBackground {
   background-image: url('../images/forestSmall.jpg');
-  background-color: grey;
+  background-color: #58A4B0;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: left top;
   background-attachment: fixed;
+  border-radius: 0 0 85px 0;
 }
 
 @media screen and (min-width: 765px) {
-  .landing {
+  #forestBackground {
     background-image: url('../images/forestMed.jpg');
     background-position: center;
+    border-radius: 0 0 135px 0;
   }
 }
 
 @media screen and (min-width:900px) {
-  .landing {
+  #forestBackground {
     background-image: url('../images/forest.jpg');
     background-position: center;
+    border-radius: 0 0 135px 0;
   }
 }
 
-img.displayImg {
-  margin-top: 15vh;
-  border-radius: 50%;
-  border: white 4px solid;
-  width: 17vh;
-  min-width: 100px;
-  height: 17vh;
-  min-height: 100px;
+.designBehindPhoto {
+  background-image: url('../images/blue.jpg');
+  background-color: grey;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: left center;
 }
 
-#Montserrat {
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
-  text-align: center;
-  margin-top: 3vh;
+img.headshot {
+  border-radius: 0 130px 0 0;
 }
 
-#RanchoFont {
-  font-family: 'Rancho', cursive;
-  font-size: 140%;
+.headshot-overlap {
+  position: relative;
+  z-index: 300;
+  right: -20px;
 }
 
-ul.horizontalList {
+.card-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.name-title {
+  font-size: 2.75rem;
+  line-height: 1.2;
+}
+
+.job-title {
+  font-size: 1.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .w-md-60 {
+    width: 75%;
+  }
+
+  .card-width {
+    width: 90%;
+  }
+
+  .name-title {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .job-title {
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .w-md-60 {
+    width: 65%;
+  }
+  .card-width {
+      width: 70%;
+  }
+
+  .headshot-overlap {
+    right: -75px;
+  }
+}
+
+#landingSubtitle {
+  color: #58A4B0; 
+}
+
+#landingLeft {
+  min-height:95vh;
+  background-image: url('../images/forest.jpg');
+  background-color: #58A4B0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  border-radius: 0 0 135px 0;
+}
+
+.iconGrey{
+  color: grey;
+  font-size: 150%;
+}
+
+.iconGrey:hover {
+  transition: 0.3s;
+  color: #58A4B0;
+}
+
+ul.landingHorizontalList {
   list-style-type: none;
   display: inline-block;
-  padding: 10px;
-  margin-top: 1vh;
 }
 
-li.link {
+li.landingLink {
   display: block;
   float: left;
-  margin: 0 3vw 0 3vw;
   text-decoration: none;
   opacity: 0.9;
+  margin: 0 20px 0 0;
 }
 
-li.link:hover {
+li.landingLink:hover {
   transition: 0.3s;
   opacity: 1;
 }
 
-.iconWhite {
-  color: white;
-  text-shadow: 2px 2px 4px #222222;
-  font-size: 200%;
+img.headshotImg {
+  max-width: 35rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 130px 0 0;
 }
 
-.iconWhite:hover {
-  transition: 0.3s;
-  text-shadow: 3px 3px 5px #111111;
-}
-
-#resumeBtn {
-  margin-top: 1vh;
-  box-shadow: 0 4px 8px 0 #111111;
-  background-color: rgba(25, 25, 25, 0.5);
-}
-
-#resumeBtn:hover {
-  background-color: rgba(255, 255, 255, 1);
-  transition: 0.3s;
-}
-
-#moveDownBtn {
-  margin-top: 13vh;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px 0 #555555;
-  background-color: rgba(25, 25, 25, 0.5);
-}
-
-#moveDownBtn:hover,
-#moveDownBtn:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(0.25em);
-  background-color: rgba(255, 255, 255, 1);
-}
-
-
-/* Styles for Portfolio View */
-
-#Portfolio {
-  min-height: 100vh;
-  background-color:white;
-}
-
-h1.PortTitle {
-  font-family: 'Rancho', cursive;
-  font-size: 400%;
-  color: #006AD7;
-  text-shadow: 1px 1px 3px #777777;
-  padding: 10vh 0 1vw 0;
-}
-
-h3.project-name {
-  font-family: "Montserrat", sans-serif;
-}
-
-.project {
-    border: 2px solid rgba(45,50,56, 0.6);
-    border-radius: 10px;
-    padding: 1em;
-    box-shadow: 0px 5px 5px grey;
-}
-
-.tabbed {
-    background-color: #F1F1F1;
-    color: black;
-    min-width: 90px;
-}
-
-#tasks {
-  color: #006AD7;
-}
-
-.description {
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-}
-
-.secondProjects {
-  padding: 0.5em 1em 1em 1em;
-}
-
-#allProjectsBtn {
-  margin: 0 auto 4vh auto;
-}
-
-#ryeifyImg {
-    max-width: 1.3em;
-}
-
-/* Styles for Education View */
-
-#Education {
-  min-height:100vh;
-  background-image: url('../images/beachSmall.jpg');
+.blueBalls {
+  height: 100%;
+  background-image: url('../images/blue.jpg');
   background-color: grey;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left bottom;
-  background-attachment: fixed;
 }
 
-@media screen and (min-width: 765px) {
-  #Education {
-    background-image: url('../images/beachMed.jpg');
-    background-position: left top;
-    background-attachment: fixed;
-  }
+
+/* Experience Styles */
+
+h1.ExperienceTitle {
+  color: #006AD7;
+  font-size: 2.5rem;
 }
 
-@media screen and (min-width:900px) {
-  #Education {
-    background-image: url('../images/rockBeach.jpg');
-    background-position: right bottom;
-    background-attachment: fixed;
-  }
-}
-
-h1#EdTitle {
-  font-family: 'Rancho', cursive;
-  font-size: 400%;
-  color: white;
-  text-shadow: 1px 1px 3px #777777;
-  padding: 9vh 10vw 0 0;
-}
-
+/* Timeline used in Experience */
 ul.timeline {
   list-style-type: none;
   position: relative;
@@ -231,7 +197,7 @@ ul.timeline {
 
 ul.timeline:before {
   content: ' ';
-  background: white;
+  background: #006AD7;
   display: inline-block;
   position: absolute;
   left: 10px;
@@ -240,16 +206,21 @@ ul.timeline:before {
   z-index: 250;
 }
 
-li.event {
+li.job {
   margin: 1vw 3vw 20px 0;
   padding: 10px 20px 1px 20px;
   border-radius: 10px;
-  width: 75vw;
   background-color: white;
-  font-family: "Montserrat", sans-serif;
+  border: 1px solid darkgrey;
 }
 
-li.event::before {
+@media screen and (min-width:900px) {
+  li.job {
+    width: 80vw;
+  }
+}
+
+li.job::before {
   content: ' ';
   display: inline-block;
   position: absolute;
@@ -262,72 +233,81 @@ li.event::before {
   z-index: 275;
 }
 
-.textBlue {
-  color: #006AD7;
-}
-
-#school {
-  color: #006AD7;
-}
-
-#date {
-  color: #006AD7;
-}
-
-#degree {
+.company {
   color: #B32442;
+}
+
+.jobTitle {
+  color: #006AD7;
+}
+
+.jobDate {
+  color: #58A4B0;
 }
 
 .horizLine {
   margin: 0.5rem 0;
 }
 
-#schoolDesc {
-  color: #58A4B0;
+
+/* Project */
+
+.carousel-photo-fit {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
 }
 
-.language {
-  font-weight: bold;
-  color: black;
+.rounded-border-left-lg-top-sm {
+  border-radius: 3px 0 0 3px;
 }
 
-/* Styles for About View */
+@media only screen and (max-width: 639px) {
+    .rounded-border-left-lg-top-sm {
+        border-radius: 3px 3px 0 0;
+    }
+}
+
+.project-title {
+  color: #B32442;
+}
+
+.project-logo {
+  max-width: 35px;
+  margin-right: 5px;
+}
+
+.section-title {
+  color: #006AFF;
+}
+
+.sub-title {
+  color: #B32442;
+}
+
+
+/* About Me */
 
 #About {
   min-height: 100vh;
   background-color:white;
 }
 
-#aboutContain {
-  font-family: "Montserrat", sans-serif;
+#circle-photo {
+  border-radius: 50%;
+  max-width: 150px;
 }
 
-#aboutMe {
-  text-align: center;
-  line-height: 2em;
-  padding-bottom: 0vw;
+.aboutMe {
+  line-height: 1.75em;
 }
 
-#skills {
-  color: #006AD7;
-  font-family: "Montserrat", sans-serif;
-}
-
-ul.skills-no-bullet {
-    list-style: none;
-    text-align: center;
-}
-
-#lineDiv {
-  background-color: #888888;
-}
-
-h4#resume {
-  padding-top: 2vw;
+#redLineDiv {
+  background-color: #DC3545;
 }
 
 .resume {
-  color: #006AD7;
+  color: #006AA7;
 }
 
 .resume:hover {
@@ -335,28 +315,12 @@ h4#resume {
   text-shadow: 3px 3px 5px #999999;
 }
 
-i.iconBlue {
-  color: #006AD7;
+i.iconRed {
+  color: #DC3545;
   font-size: 200%;
 }
 
-i.iconBlue:hover {
+i.iconRed:hover {
   transition: 0.2s;
-  text-shadow: 3px 3px 5px #999999;
-}
-
-div.languageBar {
-  background-color: #006AD7;
-}
-
-div.databaseBar {
-  background-color: #CC320C;
-}
-
-div.hardwareBar {
-  background-color: #FABC3C;
-}
-
-#hidden {
-  display: none;
+  color: #B32442;
 }
