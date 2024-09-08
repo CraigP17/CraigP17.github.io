@@ -16,10 +16,7 @@ function openTab(tabName) {
     document.getElementById(`${tabName}-btn-top`).style.backgroundColor = "#006AD7";
     document.getElementById(`${tabName}-btn-btm`).style.backgroundColor = "#006AD7";
     document.getElementById(`${tabName}-btn-top`).style.color = "white";
-    document.getElementById(`${tabName}-btn-btm`).style.color = "white";
-    // element.style.backgroundColor = "#006AD7";
-    // element.style.color = "white";
-    
+    document.getElementById(`${tabName}-btn-btm`).style.color = "white";    
 }
 
 // Set Work tab as default selected
